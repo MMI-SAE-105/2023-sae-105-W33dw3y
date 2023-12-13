@@ -11,14 +11,17 @@
 <body class="body">
     <header 
     class="head"
-    
+    x-data="{isMenuOpen: false}"
     >
         <a href="/">
             <img class="head__logo" src="public/icons/icon_logo.svg" alt="logo">
         </a>
         <p class="head__btn-menu">MENU</p>
 
-        <nav class="menu">
+        <nav 
+        class="menu"
+        :class="{actif:isMenuOpen}"
+        >
             <img class="menu__close" src="public/icons/icon_close.svg" alt="icon close">
 
             <div class="menu__content">
