@@ -1,7 +1,4 @@
 .menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     position: fixed;
     top: 0;
     right: -100%;
@@ -13,8 +10,4 @@
 
 .actif {
     right: 0;
-}
-
-.menu__close {
-    max-width: 50px;
 }
