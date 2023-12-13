@@ -1,0 +1,30 @@
+.info {
+    background-color: var(--beige);
+    padding: 2rem 2.5rem;
+}
+
+.info__text {
+    margin: 0;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.info__title {
+    font-size: var(--heading-3);
+    font-weight: 700;
+    width: 65%;
+    margin-bottom: 1rem;
+}
+
+.info__date {
+    font-size: var(--body-2);
+}
+
+.info__line {
+    border: 1px solid #000;
+    margin: 1rem 0rem;
+}
+
+.info__place {
+    font-size: var(--body-1);
+    font-weight: 300;
+}

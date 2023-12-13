@@ -1,12 +1,12 @@
 :root {
 /* Text-size styles */
-    /*font-size: 33px;*/
+    /*font-size: 33px;
 /* base size: heading-1 (33px) */
-    --heading-1: 1rem;
-    --heading-2: 0.97rem;
-    --body-1: 0.48rem;
-    --body-2: 0.42rem;
-    --heading-3: 0.73rem;
+    --heading-1: 33px;
+    --heading-2: 32px;
+    --body-1: 16px;
+    --body-2: 14px;
+    --heading-3: 24px;
 
     --blue: #3D4A54;
     --beige:#F2D8AE;
