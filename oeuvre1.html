@@ -6,16 +6,30 @@
     <title>L'Usine Fagus</title>
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="icon" href="public/icons/icon_logo.svg">
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header class="head">
+    <header 
+    class="head"
+    x-data="{isMenuOpen: false}"
+    >
         <a href="/">
             <img class="head__logo" src="public/icons/icon_logo.svg" alt="logo">
         </a>
-        <p class="head__btn-menu">MENU</p>
+        <p 
+        class="head__btn-menu"
+        @click="isMenuOpen = !isMenuOpen"
+        >MENU</p>
 
-        <nav class="menu">
-            <img class="menu__close" src="public/icons/icon_close.svg" alt="icon close">
+        <nav 
+        class="menu"
+        :class="{actif:isMenuOpen}"
+        >
+            <img 
+            class="menu__close" 
+            @click="isMenuOpen = !isMenuOpen"
+            src="public/icons/icon_close.svg" 
+            alt="icon close">
 
             <div class="menu__content">
                 <h1 class="menu__title">A PROPOS DE L'EXPOSITION</h1>
@@ -31,7 +45,7 @@
                 <hr class="menu_line">
                 <ul class="menu__list">
                     <li class="menu__element"><a href="/biographie.html">Biographie</a></li>
-                    <li class="menu__element"><a href="">Ses oeuvres</a>
+                    <li class="menu__element"><a href="#">Ses oeuvres</a>
                     <ul class="menu__deroulant">
                         <li class="menu__deroulant--element"><a href="/oeuvre1.html">The Fagus-Werk Factory</a></li>
                         <li class="menu__deroulant--element"><a href="/oeuvre2.html">Pan Am Building</a></li>
@@ -47,6 +61,7 @@
             
             <a class="menu__legal-notice" href="#">Mentions légales</a>
         </nav>
+
     </header>
 
     <main class="main">
