@@ -1,7 +1,23 @@
-.caroussel {
+.caroussel__parent-ecran {
     display: flex;
     width: 100%;
     height: auto;
     overflow-x: scroll;
     scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.caroussel__figure {
+    margin: 0;
+}
+
+.caroussel__screen {
+    width: 100%;
+    flex: none;
+    scroll-snap-align: start;
+}
+
+.caroussel__img {
+    width: 100%;
+    object-fit: cover;
 }
