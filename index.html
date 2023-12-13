@@ -9,7 +9,9 @@
 </head>
 <body class="body">
     <header class="head">
-        <img class="head__logo" src="public/icons/icon_logo.svg" alt="logo">
+        <a href="/">
+            <img class="head__logo" src="public/icons/icon_logo.svg" alt="logo">
+        </a>
         <p class="head__btn-menu">MENU</p>
 
         <nav class="menu">
@@ -19,26 +21,26 @@
                 <h1 class="menu__title">A PROPOS DE L'EXPOSITION</h1>
                 <hr class="menu__line">     
                 <ul class="menu__list">
-                    <li class="menu__element"><a href="">Renseignements</a></li>
-                    <li class="menu__element"><a href="">Billeterie</a></li>
-                    <li class="menu__element"><a href="">Contactez-nous</a></li>
+                    <li class="menu__element"><a href="#renseignements">Renseignements</a></li>
+                    <li class="menu__element"><a href="#">Billeterie</a></li>
+                    <li class="menu__element"><a href="/contact.html">Contactez-nous</a></li>
                 </ul>
             </div>
             <div class="menu__content">
                 <h1 class="menu__title">A PROPOS DE L'ARTISTE</h1>
                 <hr class="menu_line">
                 <ul class="menu__list">
-                    <li class="menu__element"><a href="">Biographie</a></li>
-                    <li class="menu__element"><a href="">Ses oeuvres</a>
+                    <li class="menu__element"><a href="/biographie.html">Biographie</a></li>
+                    <li class="menu__element"><a href="#">Ses oeuvres</a>
                     <ul class="menu__deroulant">
-                        <li class="menu__deroulant--element"><a href="">Pan Am Building</a></li>
-                        <li class="menu__deroulant--element"><a href="">The Fagus-Werk Factory</a></li>
-                        <li class="menu__deroulant--element"><a href="">Bauhaus Archive</a></li>
-                        <li class="menu__deroulant--element"><a href="">Temple Oheb Shalom</a></li>
-                        <li class="menu__deroulant--element"><a href="">Gropius House</a></li>
-                        <li class="menu__deroulant--element"><a href="">Ambassade des États-Unis</a></li>
-                        <li class="menu__deroulant--element"><a href="">Maison Alan I W Frank </a></li>
-                        <li class="menu__deroulant--element"><a href="">66 Old Church Street</a></li>
+                        <li class="menu__deroulant--element"><a href="/oeuvre1.html">The Fagus-Werk Factory</a></li>
+                        <li class="menu__deroulant--element"><a href="/oeuvre2.html">Pan Am Building</a></li>
+                        <li class="menu__deroulant--element"><a href="/oeuvre3.html">Bauhaus Archive</a></li>
+                        <li class="menu__deroulant--element"><a href="/oeuvre4.html">Temple Oheb Shalom</a></li>
+                        <li class="menu__deroulant--element"><a href="/oeuvre5.html">Gropius House</a></li>
+                        <li class="menu__deroulant--element"><a href="/oeuvre6.html">Ambassade des États-Unis</a></li>
+                        <li class="menu__deroulant--element"><a href="/oeuvre7.html">Maison Alan I W Frank </a></li>
+                        <li class="menu__deroulant--element"><a href="/oeuvre8.html">66 Old Church Street</a></li>
                     </ul></li>
                 </ul>
             </div>
@@ -56,7 +58,7 @@
             <img class="header-home__background-img" src="public/img/img_homepage_header.webp" alt="Walter Gropius photo">
         </header>
 
-        <section class="info">
+        <section class="info" id="renseignements">
             <h3 class="info__title">Du 13 avril au 23 juin 2024</h3>
             <p class="info__date">Tous les jours de 11h à 20h, sauf le lundi. Nocturne le mardi, jusqu'à 22h. La fermeture des salles débuteà 19h45 (21h45 les mardis).</p>
             <hr class="info__line">
@@ -71,7 +73,7 @@
             <p class="tarif__main-prices">Fondation Cartier Pass = 18€ - 50€</p>
             
             <p class="tarif__secondary-prices">Gratuit pour : les moins de 13 ans, laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants Gratuit.</p>
-            <button class="tarif__button">BILLETERIE</button>
+            <a class="tarif__button">BILLETERIE</a>
             <img class="tarif__img" src="public/img/img_homepage_tarifs.webp" alt="maison alan frank">
         </section>
 
@@ -147,7 +149,7 @@
 
             <hr>
 
-            <button class="contact__button">Contactez-nous !</button>
+            <a class="contact__button">Contactez-nous !</a>
         </section>
     </main>
 
@@ -160,9 +162,9 @@
         <nav class="footer-nav">
             <h1 class="footer-nav__title">Menu</h1>
             <ul class="footer-nav__list">
-                <li class="footer-nav_element"><a class="footer-nav__link" href="">Renseignements</a></li>
-                <li class="footer-nav_element"><a class="footer-nav__link" href="">Billeterie</a></li>
-                <li class="footer-nav_element">Mentions légales<a class="footer-nav__link" href=""></a></li>
+                <li class="footer-nav_element"><a class="footer-nav__link" href="#renseignements">Renseignements</a></li>
+                <li class="footer-nav_element"><a class="footer-nav__link" href="#">Billeterie</a></li>
+                <li class="footer-nav_element">Mentions légales<a class="footer-nav__link" href="#"></a></li>
             </ul>
         </nav>
 
@@ -174,9 +176,15 @@
 
         <section class="footer-social">
             <h2 class="footer-social__title">Nous suivre</h2>
-            <img class="footer-social__icon" src="public/icons/icon_facebook.svg" alt="facebook icon">
-            <img class="footer-social__icon" src="public/icons/icon_instagram.svg" alt="instagram icon">
-            <img class="footer-social__icon" src="public/icons/icon_youtube.svg" alt="youtube icon">
+            <a href="#">
+                <img class="footer-social__icon" src="public/icons/icon_facebook.svg" alt="facebook icon">
+            </a>
+            <a href="#">
+                <img class="footer-social__icon" src="public/icons/icon_instagram.svg" alt="instagram icon">
+            </a>
+            <a href="#">
+                 <img class="footer-social__icon" src="public/icons/icon_youtube.svg" alt="youtube icon">
+            </a>
         </section>
     </footer>
 </body>
