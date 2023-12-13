@@ -1,3 +1,8 @@
+.caroussel {
+    position: relative;
+    margin: 1rem 0rem;
+}
+
 .caroussel__parent-ecran {
     display: flex;
     width: 100%;
@@ -12,9 +17,9 @@
 }
 
 .caroussel__screen {
-    width: 100%;
+    width: 80%;
     flex: none;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 }
 
 .caroussel__img {
