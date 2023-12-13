@@ -16,13 +16,20 @@
         <a href="/">
             <img class="head__logo" src="public/icons/icon_logo.svg" alt="logo">
         </a>
-        <p class="head__btn-menu">MENU</p>
+        <p 
+        class="head__btn-menu"
+        @click="isMenuOpen = !isMenuOpen"
+        >MENU</p>
 
         <nav 
         class="menu"
         :class="{actif:isMenuOpen}"
         >
-            <img class="menu__close" src="public/icons/icon_close.svg" alt="icon close">
+            <img 
+            class="menu__close" 
+            @click="isMenuOpen = !isMenuOpen"
+            src="public/icons/icon_close.svg" 
+            alt="icon close">
 
             <div class="menu__content">
                 <h1 class="menu__title">A PROPOS DE L'EXPOSITION</h1>
