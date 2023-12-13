@@ -6,7 +6,177 @@
     <title>Lignes & Lumières</title>
     <link rel="stylesheet" href="src/css/styles.css">
 </head>
-<body>
+<body class="body">
+    <header class="head">
+        <img class="head__logo" src="public/icons/icon_logo.svg" alt="logo">
+        <p class="head__btn-menu">MENU</p>
 
+        <nav class="menu">
+            <img class="menu__close" src="public/icons/icon_close.svg" alt="icon close">
+
+            <div class="menu__content">
+                <h1 class="menu__title">A PROPOS DE L'EXPOSITION</h1>
+                <hr class="menu__line">     
+                <ul class="menu__list">
+                    <li class="menu__element"><a href="">Renseignements</a></li>
+                    <li class="menu__element"><a href="">Billeterie</a></li>
+                    <li class="menu__element"><a href="">Contactez-nous</a></li>
+                </ul>
+            </div>
+            <div class="menu__content">
+                <h1 class="menu__title">A PROPOS DE L'ARTISTE</h1>
+                <hr class="menu_line">
+                <ul class="menu__list">
+                    <li class="menu__element"><a href="">Biographie</a></li>
+                    <li class="menu__element"><a href="">Ses oeuvres</a>
+                    <ul class="menu__deroulant">
+                        <li class="menu__deroulant--element"><a href="">Pan Am Building</a></li>
+                        <li class="menu__deroulant--element"><a href="">The Fagus-Werk Factory</a></li>
+                        <li class="menu__deroulant--element"><a href="">Bauhaus Archive</a></li>
+                        <li class="menu__deroulant--element"><a href="">Temple Oheb Shalom</a></li>
+                        <li class="menu__deroulant--element"><a href="">Gropius House</a></li>
+                        <li class="menu__deroulant--element"><a href="">Ambassade des États-Unis</a></li>
+                        <li class="menu__deroulant--element"><a href="">Maison Alan I W Frank </a></li>
+                        <li class="menu__deroulant--element"><a href="">66 Old Church Street</a></li>
+                    </ul></li>
+                </ul>
+            </div>
+            
+            <a class="menu__legal-notice" href="#">Mentions légales</a>
+        </nav>
+
+    </header>
+
+    <main class="main">
+        <header class="header-home">
+            <h2 class="header-home__title">Lignes & Lumières</h2>
+            <p class="header-home__text">Exposition</p>
+            <h2 class="header-home__title">Walter Gropius</h2>
+            <img class="header-home__background-img" src="public/img/img_homepage_header.webp" alt="Walter Gropius photo">
+        </header>
+
+        <section class="info">
+            <h3 class="info__title">Du 13 avril au 23 juin 2024</h3>
+            <p class="info__date">Tous les jours de 11h à 20h, sauf le lundi. Nocturne le mardi, jusqu'à 22h. La fermeture des salles débuteà 19h45 (21h45 les mardis).</p>
+            <hr class="info__line"></hr>
+            <p class="info__place">Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+        </section>
+
+        <section class="tarif">
+            <h3 class="tarif__title">Tarifs</h3>
+            <p class="tarif__main-prices">Plein tarifs = 11€</p>
+            <p class="tarif__main-prices">Plein réduit = 7.5€</p>
+            <p class="tarif__main-prices">Réduction 13 - 25 ans = 5€</p>
+            <p class="tarif__main-prices">Fondation Cartier Pass = 18€ - 50€</p>
+            
+            <p class="tarif__secondary-prices">Gratuit pour : les moins de 13 ans, laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants Gratuit.</p>
+            <button class="tarif__button">BILLETERIE</button>
+            <img class="tarif__img" src="public/img/img_homepage_tarifs.webp" alt="maison alan frank">
+        </section>
+
+        <section class="caroussel">
+            <button class="carrousel_btn carrousel_btn-before">◁</button>
+            <button class="carrousel_btn carrousel_btn-after">▷</button>
+            <div class="caroussel__screen">
+                <figure class="caroussel__figure">
+                    <img src="public/img/img_caroussel_1.webp" alt="" class="caroussel__img">
+                    <figcaption class="caroussel__text"></figcaption>
+                </figure>
+            </div>
+            <div class="caroussel__screen">
+                <figure class="caroussel__figure">
+                    <img src="public/img/img_caroussel_2.webp" alt="" class="caroussel__img">
+                    <figcaption class="caroussel__text"></figcaption>
+                </figure>
+            </div>
+            <div class="caroussel__screen">
+                <figure class="caroussel__figure">
+                    <img src="public/img/img_caroussel_3.webp" alt="" class="caroussel__img">
+                    <figcaption class="caroussel__text"></figcaption>
+                </figure>
+            </div>
+            <div class="caroussel__screen">
+                <figure class="caroussel__figure">
+                    <img src="public/img/img_caroussel_4.webp" alt="" class="caroussel__img">
+                    <figcaption class="caroussel__text"></figcaption>
+                </figure>
+            </div>
+            <div class="caroussel__screen">
+                <figure class="caroussel__figure">
+                    <img src="public/img/img_caroussel_5.webp" alt="" class="caroussel__img">
+                    <figcaption class="caroussel__text"></figcaption>
+                </figure>
+            </div>
+            <div class="caroussel__screen">
+                <figure class="caroussel__figure">
+                    <img src="public/img/img_caroussel_6.webp" alt="" class="caroussel__img">
+                    <figcaption class="caroussel__text"></figcaption>
+                </figure>
+            </div>
+            <div class="caroussel__screen">
+                <figure class="caroussel__figure">
+                    <img src="public/img/img_caroussel_7.webp" alt="" class="caroussel__img">
+                    <figcaption class="caroussel__text"></figcaption>
+                </figure>
+            </div>
+            <div class="caroussel__screen">
+                <figure class="caroussel__figure">
+                    <img src="public/img/img_caroussel_8.webp" alt="" class="caroussel__img">
+                    <figcaption class="caroussel__text"></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact">
+            <form class="newsletter" action="#">
+                <ul class="newsletter__list">
+                    <li class="newsletter__element">
+                       <!-- <label for="name"></label> --> 
+                        <input type="text" id="name" name="user_name" placeholder="Nom*">
+                    </li>
+                    <li class="newsletter__element">
+                        <!-- <label for="mail">Email*</label> -->
+                        <input type="text" id="mail" mail="user_mail" placeholder="Email*">
+                    </li>
+                    <li class="newsletter__button">
+                        <button type="sumbit">Envoyer</button>
+                    </li>
+                </ul>
+            </form>
+
+            <hr>
+
+            <button class="contact__button">Contactez-nous !</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer-header">
+            <img class="footer-header__icon" src="public/icons/icon_logo.svg" alt="logo">
+            <p class="footer-header__title">Lignes & Lumières</p>
+        </section>
+
+        <nav class="footer-nav">
+            <h1 class="footer-nav__title">Menu</h1>
+            <ul class="footer-nav__list">
+                <li class="footer-nav_element"><a class="footer-nav__link" href="">Renseignements</a></li>
+                <li class="footer-nav_element"><a class="footer-nav__link" href="">Billeterie</a></li>
+                <li class="footer-nav_element">Mentions légales<a class="footer-nav__link" href=""></a></li>
+            </ul>
+        </nav>
+
+        <section class="footer-contact">
+            <p class="footer-contact__element">261 Bd Raspail , 75014 Paris</p>
+            <p class="footer-contact__element">Tél. +33 1 42 18 56 50</p>
+            <p class="footer-contact__element">info.reservation@fondation.cartier.com</p>
+        </section>
+
+        <section class="footer-social">
+            <h2 class="footer-social__title">Nous suivre</h2>
+            <img class="footer-social__icon" src="public/icons/icon_facebook.svg" alt="facebook icon">
+            <img class="footer-social__icon" src="public/icons/icon_instagram.svg" alt="instagram icon">
+            <img class="footer-social__icon" src="public/icons/icon_youtube.svg" alt="youtube icon">
+        </section>
+    </footer>
 </body>
 </html>
