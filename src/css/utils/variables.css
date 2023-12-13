@@ -1,0 +1,14 @@
+:root {
+/* Text-size styles */
+    font-size: 33px;
+/* base size: heading-1 (33px) */
+    --heading-1: 1rem;
+    --heading-2: 0.97rem;
+    --body-1: 0.48rem;
+    --body-2: 0.42rem;
+    --heading-3: 0.73rem;
+
+    --blue: #3D4A54;
+    --beige:#F2D8AE;
+    --light-gray:#F9F9F9;
+}
