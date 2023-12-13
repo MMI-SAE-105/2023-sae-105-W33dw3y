@@ -1,3 +1,4 @@
+/*MENU*/
 .menu{
     position: fixed;
     top: 0;
@@ -6,8 +7,23 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.99);
     transition: right 0.5s;
+    z-index: 1;
 }
 
 .actif {
     right: 0;
+}
+
+.head__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #FFF;
+    color: white;
+    padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.head__btn-menu {
+    margin: 0;
+    padding: 0;
 }

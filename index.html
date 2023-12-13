@@ -13,6 +13,7 @@
     class="head"
     x-data="{isMenuOpen: false}"
     >
+    <div class="head__content">
         <a href="/">
             <img class="head__logo" src="public/icons/icon_logo.svg" alt="logo">
         </a>
@@ -20,7 +21,7 @@
         class="head__btn-menu"
         @click="isMenuOpen = !isMenuOpen"
         >MENU</p>
-
+    </div>
         <nav 
         class="menu"
         :class="{actif:isMenuOpen}"

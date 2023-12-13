@@ -1,0 +1,17 @@
+.header-home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 100%;
+    height: 40vh;
+
+    color: white;
+}
+
+.header-home__background-img {
+    position: absolute;
+    z-index: -1;
+}
