@@ -12,7 +12,7 @@ Soyez attentifs à l'ordre d'import :
 */
 
 /* Code fourni par Google Font pour l'utilisation de ces polices de caractères */
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@700&display=swap');
 
 /* Vendors */
@@ -30,5 +30,7 @@ Soyez attentifs à l'ordre d'import :
 @import url(layout/footer.css);
 
 /* Components */
-@import url(components/header-home.css);
-@import url(components/info.css);
+@import url(components/homepage/header-home.css);
+@import url(components/homepage/info.css);
+@import url(components/homepage/tarif.css);
+@import url(components/homepage/caroussel.css);

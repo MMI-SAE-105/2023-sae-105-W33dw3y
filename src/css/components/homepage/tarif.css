@@ -1,0 +1,28 @@
+.tarif {
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    
+    font-family: 'Comfortaa', sans-serif;
+    gap: 0.3rem;
+}
+
+.tarif__title {
+    align-self: center;
+    font-size: var(--heading-3);
+    font-weight: 700;
+}
+
+.tarif__main-prices {
+    font-size: var(--body-1);
+}
+
+.tarif__secondary-prices {
+    margin-top: 1.5rem;
+    width: 90%;
+}
+
+.tarif__button {
+    align-self: flex-end;
+    margin: 0.5rem 2rem;
+}
