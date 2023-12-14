@@ -97,7 +97,20 @@
         </section>
 
         <section class="caroussel">
-            <div class="caroussel__parent-ecran">
+            <button 
+            class="caroussel__btn caroussel_btn-before"
+            @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"
+            ><img class="caroussel__btn-icon" src="public/icons/icon_arrow_backward.svg" alt="fleche arriere"></button>
+            <button 
+            class="caroussel__btn caroussel_btn-after"
+            @click="$refs.parent.scrollLeft += $refs.parent.clientWidth"
+            ><img class="caroussel__btn-icon" src="public/icons/icon_arrow_forward.svg" alt="fleche avant"></button>
+            <div 
+            class="caroussel__parent-ecran"
+            class="carrousel_parent-ecrans"
+            x-ref="parent"
+            @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id"
+            >
                 <div class="caroussel__screen">
                     <figure class="caroussel__figure">
                         <img src="public/img/img_caroussel_1.webp" alt="" class="caroussel__img">

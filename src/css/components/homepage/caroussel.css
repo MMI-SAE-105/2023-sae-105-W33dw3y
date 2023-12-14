@@ -57,3 +57,25 @@
     width: 70%;
     margin-top: 2rem;
 }
+
+.caroussel__btn {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    border: none;
+
+    position: absolute;
+    top: calc(50% ); /* centre verticalement ~50% vertical */
+    transform: translateY(-50%); /* methode du point mort */
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-content: center;
+}
+
+.caroussel_btn-before {
+    left: 0.5rem;
+}
+
+.caroussel_btn-after {
+    right: 0.5rem;
+}
