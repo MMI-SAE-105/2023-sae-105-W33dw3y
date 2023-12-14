@@ -1,10 +1,18 @@
 .tarif {
-    padding: 1rem 3rem;
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
     font-family: 'Comfortaa', sans-serif;
     gap: 0.3rem;
+}
+
+.tarif__content {
+
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 2rem;
+    padding: 0rem 1rem;
+    background-color: #fff;
 }
 
 .tarif__title {
@@ -25,4 +33,13 @@
 .tarif__button {
     align-self: flex-end;
     margin: 0.5rem 2rem;
+}
+
+
+.tarif__img {
+    position: relative;
+    z-index: -1;
+
+    width: 90%;
+    bottom: 2rem;
 }
