@@ -8,53 +8,68 @@
     <link rel="icon" href="public/icons/icon_logo.svg">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
-<body>
+<body 
+class="body" 
+x-data="{ isMenuOpen: false }"
+:class="{ 'overflow-hidden': isMenuOpen }"
+>
     <header 
     class="head"
-    x-data="{isMenuOpen: false}"
+    @click.away="isMenuOpen = false"
     >
+    <div class="head__content">
         <a href="/">
             <img class="head__logo" src="public/icons/icon_logo.svg" alt="logo">
         </a>
         <p 
-        class="head__btn-menu"
-        @click="isMenuOpen = !isMenuOpen"
-        >MENU</p>
+        class="head__btn-menu" 
+        @click="isMenuOpen = !isMenuOpen">MENU
+        </p>
+    </div>
+    <nav 
+    class="menu" 
+    :class="{ 'actif': isMenuOpen }" 
+    > 
 
-        <nav 
-        class="menu"
-        :class="{actif:isMenuOpen}"
-        >
-            <img 
-            class="menu__close" 
-            @click="isMenuOpen = !isMenuOpen"
-            src="public/icons/icon_close.svg" 
-            alt="icon close">
-
+        <div class="menu__header">
+                <img 
+                class="menu__close" 
+                @click="isMenuOpen = !isMenuOpen"
+                src="public/icons/icon_close.svg" 
+                alt="icon close">
+            </div>
             <div class="menu__content">
                 <h1 class="menu__title">A PROPOS DE L'EXPOSITION</h1>
                 <hr class="menu__line">     
                 <ul class="menu__list">
-                    <li class="menu__element"><a href="/index.html#renseignements">Renseignements</a></li>
-                    <li class="menu__element"><a href="#">Billeterie</a></li>
-                    <li class="menu__element"><a href="/contact.html">Contactez-nous</a></li>
+                    <li class="menu__element"><a class="menu__element--link" href="/index.html#renseignements">Renseignements</a></li>
+                    <li class="menu__element"><a class="menu__element--link"  href="#">Billeterie</a></li>
+                    <li class="menu__element"><a class="menu__element--link"  href="/contact.html">Contactez-nous</a></li>
                 </ul>
             </div>
-            <div class="menu__content">
+            <div class="menu__content" x-data="{isSubMenuOpen:false}">
                 <h1 class="menu__title">A PROPOS DE L'ARTISTE</h1>
-                <hr class="menu_line">
+                <hr class="menu__line"> 
                 <ul class="menu__list">
-                    <li class="menu__element"><a href="/biographie.html">Biographie</a></li>
-                    <li class="menu__element"><a href="#">Ses oeuvres</a>
-                    <ul class="menu__deroulant">
-                        <li class="menu__deroulant--element"><a href="/oeuvre1.html">The Fagus-Werk Factory</a></li>
-                        <li class="menu__deroulant--element"><a href="/oeuvre2.html">Pan Am Building</a></li>
-                        <li class="menu__deroulant--element"><a href="/oeuvre3.html">Bauhaus Archive</a></li>
-                        <li class="menu__deroulant--element"><a href="/oeuvre4.html">Temple Oheb Shalom</a></li>
-                        <li class="menu__deroulant--element"><a href="/oeuvre5.html">Gropius House</a></li>
-                        <li class="menu__deroulant--element"><a href="/oeuvre6.html">Ambassade des États-Unis</a></li>
-                        <li class="menu__deroulant--element"><a href="/oeuvre7.html">Maison Alan I W Frank </a></li>
-                        <li class="menu__deroulant--element"><a href="/oeuvre8.html">66 Old Church Street</a></li>
+                    <li class="menu__element"><a class="menu__element--link" href="/biographie.html">Biographie</a></li>
+                    <li class="menu__element"><a 
+                        class="menu__element--link" 
+                        href="#"
+                        @click="isSubMenuOpen = !isSubMenuOpen"
+                        >Ses oeuvres</a>
+                    <ul 
+                    class="menu-deroulant"
+                    :class="{submenuactive:isSubMenuOpen}"
+                    >
+                        <li class="menu-deroulant__element"><a class="menu__element--link"  href="/oeuvre1.html">The Fagus-Werk Factory</a></li>
+                        <span class="menu-deroulant__line"></span>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre2.html">Pan Am Building</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre3.html">Bauhaus Archive</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre4.html">Temple Oheb Shalom</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre5.html">Gropius House</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre6.html">Ambassade des États-Unis</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre7.html">Maison Alan I W Frank </a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre8.html">66 Old Church Street</a></li>
                     </ul></li>
                 </ul>
             </div>
@@ -97,32 +112,38 @@
             <h1 class="footer-header__title">Lignes & Lumières</h1>
         </section>
 
-        <nav class="footer-nav">
-            <h1 class="footer-nav__title">Menu</h1>
+        <nav class="footer__content">
+            <h1 class="footer__title">Menu</h1>
             <ul class="footer-nav__list">
-                <li class="footer-nav_element"><a class="footer-nav__link" href="/index.html#renseignementsd">Renseignements</a></li>
-                <li class="footer-nav_element"><a class="footer-nav__link" href="#">Billeterie</a></li>
-                <li class="footer-nav_element">Mentions légales<a class="footer-nav__link" href="#"></a></li>
+                <li class="footer__element"><a class="footer-nav__link" href="/index.html#renseignements">Renseignements</a></li>
+                <li class="footer__element"><a class="footer-nav__link" href="#">Billeterie</a></li>
+                <li class="footer__element"><a class="footer-nav__link" href="#">Mentions légales</a></li>
             </ul>
         </nav>
 
-        <section class="footer-contact">
-            <p class="footer-contact__element">261 Bd Raspail , 75014 Paris</p>
-            <p class="footer-contact__element">Tél. +33 1 42 18 56 50</p>
-            <p class="footer-contact__element">info.reservation@fondation.cartier.com</p>
+        <section class="footer__content">
+            <h1 class="footer__title">Contact</h1>
+
+                <p class="footer__element">261 Bd Raspail , 75014 Paris</p>
+                <p class="footer__element">Tél. +33 1 42 18 56 50</p>
+                <p class="footer__element">info.reservation@fondation.cartier.com</p>
+
         </section>
 
         <section class="footer-social">
-            <h2 class="footer-social__title">Nous suivre</h2>
-            <a href="#">
-                <img class="footer-social__icon" src="public/icons/icon_facebook.svg" alt="facebook icon">
-            </a>
-            <a href="#">
-                <img class="footer-social__icon" src="public/icons/icon_instagram.svg" alt="instagram icon">
-            </a>
-            <a href="#">
-                 <img class="footer-social__icon" src="public/icons/icon_youtube.svg" alt="youtube icon">
-            </a>
+            <h2 class="footer__title">Nous suivre</h2>
+            <div class="footer-social__content">
+                <a href="#">
+                    <img class="footer-social__icon" src="public/icons/icon_facebook.svg" alt="facebook icon">
+                </a>
+                <a href="#">
+                    <img class="footer-social__icon" src="public/icons/icon_instagram.svg" alt="instagram icon">
+                </a>
+                <a href="#">
+                    <img class="footer-social__icon" src="public/icons/icon_youtube.svg" alt="youtube icon">
+                </a>
+            </div>
+            </section>
         </section>
     </footer>
 </body>
