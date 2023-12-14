@@ -1,0 +1,127 @@
+.biography__img-content {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem
+}
+
+.biography__img {
+    width: 50%;
+    height: auto;
+    border: 1.5px solid #fff;
+    padding: 0.5rem;
+}
+
+
+
+
+.biography__main {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.biography__main--title {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.biography__main--job {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 900;
+    font-size: var(--body-1);
+    margin-bottom: 1rem;
+    margin: 0;
+}
+
+.biography__main--birth {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 100;
+    font-size: var(--body-1);
+    margin: 0;
+}
+
+
+
+
+.biography__quote-content {
+    position: relative;
+    padding: 0rem 4rem 0rem 3rem;
+}
+.biography__quote {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 900;
+    font-size: var(--body-1);
+}
+
+.quote__background_img {
+    width: 45%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+
+
+.biography__article {
+    margin: 5rem 0rem;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.biography__article--title {
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.biography__article--text {
+    padding: 0rem 3rem;
+    font-weight: 100;
+    line-height: 1.1rem;
+}
+
+.biography__article-2 {
+    background-color: var(--light-gray);
+    padding: 2rem 0rem;
+}
+
+
+
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.gallery__title {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 900;
+    font-size: var(--heading-3);
+    margin: 0;
+}
+
+.gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.gallery__element--img {
+    width: 150px;
+    max-width: 250px;
+}
+
+.gallery__element--img:active {
+    transform: scale(1.1);
+}

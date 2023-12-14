@@ -1,0 +1,52 @@
+.header-bio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 0.3rem;
+    overflow: hidden;
+
+    padding: 0rem 1.5rem;
+
+    width: 100%;
+    height: 45vh;
+    color: white;
+}
+
+
+.header-bio__background-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    filter: blur(4px);
+}
+
+.header-bio__title {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 100;
+    align-self: flex-end;
+}
+
+.header-bio__title-strong {
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 900;
+    align-self: flex-end;
+}
+
+.header-bio__text {
+    align-self: flex-start;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 100;
+}
+
+.header-bio__text-top {
+    margin-top: 3rem;
+}
+
+.header-bio__text-bottom {
+    margin-bottom: 3rem;
+}
