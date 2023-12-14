@@ -1,6 +1,6 @@
 .info {
     background-color: var(--beige);
-    padding: 0rem 3rem;
+    padding: 2rem 3rem;
 }
 
 .info__text {
@@ -8,6 +8,7 @@
 }
 
 .info__title {
+    margin: 0;
     font-size: var(--heading-3);
     font-weight: 700;
     width: 65%;

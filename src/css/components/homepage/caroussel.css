@@ -2,6 +2,7 @@
     position: relative;
     margin: 1rem 0rem;
     padding: 2rem 0rem;
+    
 }
 
 .caroussel__parent-ecran {
@@ -37,4 +38,16 @@
     padding-left: 0.3rem;
     padding-top: 1rem;
     border-left: 1.5px solid #000;
+}
+
+.caroussel__parent-ecran::-webkit-scrollbar {
+    height: 5px;
+}
+
+.caroussel__parent-ecran::-webkit-scrollbar-thumb {
+    background-color: #3b3b3b; 
+}
+
+.caroussel__parent-ecran::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
 }
