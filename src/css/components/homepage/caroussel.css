@@ -1,8 +1,9 @@
 .caroussel {
     position: relative;
-    margin: 1rem 0rem;
-    padding: 2rem 0rem;
-    
+    margin: 3rem 0rem 2rem 0rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .caroussel__parent-ecran {
@@ -50,4 +51,9 @@
 
 .caroussel__parent-ecran::-webkit-scrollbar-track {
     background-color: #f1f1f1;
+}
+
+.caroussel__button {
+    width: 70%;
+    margin-top: 2rem;
 }
