@@ -26,12 +26,13 @@
         class="menu"
         :class="{actif:isMenuOpen}"
         >
-            <img 
-            class="menu__close" 
-            @click="isMenuOpen = !isMenuOpen"
-            src="public/icons/icon_close.svg" 
-            alt="icon close">
-
+            <div class="menu__header">
+                <img 
+                class="menu__close" 
+                @click="isMenuOpen = !isMenuOpen"
+                src="public/icons/icon_close.svg" 
+                alt="icon close">
+            </div>
             <div class="menu__content">
                 <h1 class="menu__title">A PROPOS DE L'EXPOSITION</h1>
                 <hr class="menu__line">     
@@ -43,7 +44,7 @@
             </div>
             <div class="menu__content" x-data="{isSubMenuOpen:false}">
                 <h1 class="menu__title">A PROPOS DE L'ARTISTE</h1>
-                <hr class="menu_line">
+                <hr class="menu__line"> 
                 <ul class="menu__list">
                     <li class="menu__element"><a class="menu__element--link" href="/biographie.html">Biographie</a></li>
                     <li class="menu__element"><a 
@@ -56,6 +57,7 @@
                     :class="{submenuactive:isSubMenuOpen}"
                     >
                         <li class="menu-deroulant__element"><a class="menu__element--link"  href="/oeuvre1.html">The Fagus-Werk Factory</a></li>
+                        <span class="menu-deroulant__line"></span>
                         <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre2.html">Pan Am Building</a></li>
                         <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre3.html">Bauhaus Archive</a></li>
                         <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre4.html">Temple Oheb Shalom</a></li>

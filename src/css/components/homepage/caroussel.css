@@ -58,7 +58,8 @@
 .caroussel__button {
     width: 70%;
     margin-top: 2rem;
-    
+    display: flex;
+    justify-content: center;
 }
 
 .caroussel__btn {

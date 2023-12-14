@@ -24,13 +24,18 @@
     right: -100%;
     width: 80%;
     height: 100vh;
-    background-color: rgba(20, 0, 0, 0.99);
+    background-color: rgba(0, 0, 0, 0.99);
     transition: right 0.5s;
     z-index: 1;
 
     /*text*/
     color: #FFF;
     font-family: 'Comfortaa', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
 }
 
 .actif {
@@ -45,17 +50,64 @@
 }
 
 .submenuactive{
-    max-height: 200px;
+    max-height: 400px;
 }
 
 
 
 
+/* mise en forme*/
+.menu__header {
+    width: 100%;
+    border-bottom: 1px solid #FFF;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 1.5rem;
+}
 
+.menu__close {
+    width: 35px;
+}
 
+.menu__content {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
 
 .menu__element--link,
 .menu-deroulant__element--link {
     color: #fff;
+    font-weight: 100;
+}
 
+.menu__title {
+    font-size: 17px;
+    font-weight: 100;
+    margin-bottom: 0.2rem;
+}
+
+.menu__line {
+    margin: 0;
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+.menu__element {
+    margin: 0.7rem 0rem;
+}
+
+.menu-deroulant__element {
+    display: inline-block;
+    margin-left: 1rem;
+    line-height: 2rem;
+}
+
+
+.menu__legal-notice {
+    margin-top: auto;
+    margin-bottom: 0.5rem;
+    align-self: center;
+    color: #fff;
+    font-weight: 100;
 }
