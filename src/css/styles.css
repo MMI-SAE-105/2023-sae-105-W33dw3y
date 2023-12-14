@@ -30,7 +30,9 @@ Soyez attentifs à l'ordre d'import :
 @import url(layout/footer.css);
 
 /* Components */
+/*homepage*/
 @import url(components/homepage/header-home.css);
 @import url(components/homepage/info.css);
 @import url(components/homepage/tarif.css);
 @import url(components/homepage/caroussel.css);
+@import url(components/homepage/contact.css);
