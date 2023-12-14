@@ -152,18 +152,19 @@
         </section>
 
         <section class="contact">
+            <h1 class="contact__title">Inscrivez-vous à la newsletter</h1>
             <form class="newsletter" action="#">
                 <ul class="newsletter__list">
                     <li class="newsletter__element">
                        <!-- <label for="name"></label> --> 
-                        <input type="text" id="name" name="user_name" placeholder="Nom*">
+                        <input class="newsletter__element-textarea" type="text" id="name" name="user_name" placeholder="Nom*">
                     </li>
                     <li class="newsletter__element">
                         <!-- <label for="mail">Email*</label> -->
-                        <input type="text" id="mail" name="user_mail" placeholder="Email*">
-                    </li>
-                    <li class="newsletter__button">
-                        <button>Envoyer</button>
+                        <input class="newsletter__element-textarea" type="text" id="mail" name="user_mail" placeholder="Email*">
+                    </li>   
+                    <li class="newsletter__element-button">
+                        <button class="newsletter__button button">Envoyer</button>
                     </li>
                 </ul>
             </form>
