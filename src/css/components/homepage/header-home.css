@@ -48,20 +48,7 @@
 /*animation d'entree*/
 .animation{
     animation :
-    zoom-in 0.5s 0.5s ease-out forwards,
-    zoom-out 0.5s 0.5s ease-out forwards;
+    zoom-in 1s  ease-out forwards,
+    zoom-out 1s  ease-out forwards;
 }
 
-@keyframes zoom-in{
-    from  {
-        scale:0.9;
-    }
-    to {
-        scale:1.1;
-    }
-}
-@keyframes zoom-out{
-    100% {
-        scale:1;
-    }
-}

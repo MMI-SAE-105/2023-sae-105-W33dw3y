@@ -48,11 +48,3 @@
     animation-range: entry 0% cover 15%;
 }
 
-@keyframes fade-scroll {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}

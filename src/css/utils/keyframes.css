@@ -1,0 +1,33 @@
+@keyframes zoom-in{
+    from  {
+        scale:0.9;
+    }
+    to {
+        scale:1.1;
+    }
+}
+
+@keyframes zoom-scroll {
+    from {
+        scale: 0.9;
+    }
+    to {
+        scale: 1;
+    }
+
+}
+
+@keyframes zoom-out{
+    100% {
+        scale:1;
+    }
+}
+
+@keyframes fade-scroll {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

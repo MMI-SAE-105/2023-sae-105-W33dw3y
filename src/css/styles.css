@@ -20,6 +20,7 @@ Soyez attentifs à l'ordre d'import :
 
 /* Utils */
 @import url(utils/variables.css);
+@import url(utils/keyframes.css);
 
 /* Base */
 @import url(base/media.css);
