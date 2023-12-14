@@ -1,19 +1,4 @@
-/*MENU*/
-.menu{
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 80%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.99);
-    transition: right 0.5s;
-    z-index: 1;
-}
-
-.actif {
-    right: 0;
-}
-
+/*HEADER*/
 .head__content {
     position: fixed;
     width: 100%;
@@ -30,4 +15,47 @@
 .head__btn-menu {
     margin: 0;
     padding: 0;
+}
+
+/*MENU*/
+.menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: rgba(20, 0, 0, 0.99);
+    transition: right 0.5s;
+    z-index: 1;
+
+    /*text*/
+    color: #FFF;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.actif {
+    right: 0;
+}
+
+.menu-deroulant {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.submenuactive{
+    max-height: 200px;
+}
+
+
+
+
+
+
+
+.menu__element--link,
+.menu-deroulant__element--link {
+    color: #fff;
+
 }
