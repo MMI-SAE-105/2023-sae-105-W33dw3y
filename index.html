@@ -67,7 +67,7 @@
 
     <main class="main">
         <header class="header-home">
-            <h2 class="header-home__title animation">Lignes & Lumières</h2>
+            <h2 class="header-home__title zoom-in-out">Lignes & Lumières</h2>
             <p class="header-home__text">Exposition</p>
             <h2 class="header-home__title">Walter Gropius</h2>
             <img class="header-home__background-img" src="public/img/img_homepage_header.webp" alt="Walter Gropius photo">
@@ -91,12 +91,12 @@
                 <p class="tarif__main-prices">Fondation Cartier Pass = 18€ - 50€</p>
                 
                 <p class="tarif__secondary-prices">Gratuit pour : les moins de 13 ans, laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants Gratuit.</p>
-                <a class="tarif__button button">BILLETERIE</a>
+                <a class="tarif__button button zoom-scroll">BILLETERIE</a>
             </div>
-            <img class="tarif__img" src="public/img/img_homepage_tarifs.webp" alt="maison alan frank">
+            <img class="tarif__img fade-scroll" src="public/img/img_homepage_tarifs.webp" alt="maison alan frank">
         </section>
 
-        <section class="caroussel">
+        <section class="caroussel fade-scroll">
             <button 
             class="caroussel__btn caroussel_btn-before"
             @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"
@@ -160,10 +160,10 @@
                 </div>
             </div>
 
-            <a href="/biographie.html" class="caroussel__button button">En savoir plus sur l'artiste</a>
+            <a href="/biographie.html" class="caroussel__button button zoom-scroll">En savoir plus sur l'artiste</a>
         </section>
 
-        <section class="contact">
+        <section class="contact fade-scroll">
             <h1 class="contact__title">Inscrivez-vous à la newsletter</h1>
             <form class="newsletter" action="#">
                 <ul class="newsletter__list">
@@ -183,7 +183,7 @@
 
             <hr class="contact__line">
 
-            <a class="contact__button button">Contactez-nous !</a>
+            <a class="contact__button button zoom-scroll">Contactez-nous !</a>
         </section>
     </main>
 
