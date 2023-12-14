@@ -67,7 +67,7 @@
 
     <main class="main">
         <header class="header-home">
-            <h2 class="header-home__title">Lignes & Lumières</h2>
+            <h2 class="header-home__title animation">Lignes & Lumières</h2>
             <p class="header-home__text">Exposition</p>
             <h2 class="header-home__title">Walter Gropius</h2>
             <img class="header-home__background-img" src="public/img/img_homepage_header.webp" alt="Walter Gropius photo">
@@ -107,7 +107,6 @@
             ><img class="caroussel__btn-icon" src="public/icons/icon_arrow_forward.svg" alt="fleche avant"></button>
             <div 
             class="caroussel__parent-ecran"
-            class="carrousel_parent-ecrans"
             x-ref="parent"
             @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id"
             >

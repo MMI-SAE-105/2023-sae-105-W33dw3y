@@ -43,3 +43,28 @@
     font-size: var(--heading-2);
     font-weight: 300;
 }
+
+
+/*animation d'entree*/
+.animation{
+    opacity: 0;
+    animation : fade-in 1s 1s ease-out forwards,
+    zoom-in 1s 1s ease-out forwards,
+    zoom-out 1s 1s ease-out forwards;
+}
+
+@keyframes fade-in{
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes zoom-in{
+    100% {
+        scale:1.1;
+    }
+}
+@keyframes zoom-out{
+    100% {
+        scale:1;
+    }
+}
