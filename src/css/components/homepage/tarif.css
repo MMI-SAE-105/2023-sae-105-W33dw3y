@@ -42,4 +42,17 @@
 
     width: 90%;
     bottom: 2rem;
+
+    animation: fade-scroll linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 15%;
+}
+
+@keyframes fade-scroll {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

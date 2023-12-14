@@ -47,19 +47,16 @@
 
 /*animation d'entree*/
 .animation{
-    opacity: 0;
-    animation : fade-in 1s 1s ease-out forwards,
-    zoom-in 1s 1s ease-out forwards,
-    zoom-out 1s 1s ease-out forwards;
+    animation :
+    zoom-in 0.5s 0.5s ease-out forwards,
+    zoom-out 0.5s 0.5s ease-out forwards;
 }
 
-@keyframes fade-in{
-    100% {
-        opacity: 1;
-    }
-}
 @keyframes zoom-in{
-    100% {
+    from  {
+        scale:0.9;
+    }
+    to {
         scale:1.1;
     }
 }
