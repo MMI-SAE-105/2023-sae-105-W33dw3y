@@ -38,3 +38,7 @@ ul {
     padding: 0.8rem 1.3rem;
     display: flex;
 }
+
+.button:active {
+    transform: scale(1.1);
+}

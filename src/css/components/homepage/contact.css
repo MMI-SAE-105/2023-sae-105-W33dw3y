@@ -26,6 +26,10 @@
     flex-direction: column;
 }
 
+.newsletter__element {
+    display: flex;
+}
+
 .newsletter__element-textarea {
     background-color: #323D45;
     border: none;
@@ -34,9 +38,8 @@
     margin: 0.5rem 0rem;
     padding: 0.7rem;
 
-    width: 80%;
+    width: 70%;
 }
-
 .newsletter__button {
     background: none;
     color: #fff;
