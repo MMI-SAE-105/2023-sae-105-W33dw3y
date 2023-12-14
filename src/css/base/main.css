@@ -42,3 +42,7 @@ ul {
 .button:active {
     transform: scale(1.1);
 }
+
+.biography__quote--content {
+    display: block;
+}

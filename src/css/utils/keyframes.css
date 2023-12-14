@@ -3,24 +3,18 @@
         scale:0.9;
     }
     to {
-        scale:1.1;
+        scale:1;
     }
 }
 
 @keyframes zoom-scroll {
     from {
-        scale: 0.9;
+        scale: 0.95;
     }
     to {
         scale: 1;
     }
 
-}
-
-@keyframes zoom-out{
-    100% {
-        scale:1;
-    }
 }
 
 @keyframes fade-scroll {
@@ -34,18 +28,40 @@
 
 .zoom-in-out {
     animation :
-    zoom-in 1s  ease-out forwards,
-    zoom-out 1s  ease-out forwards;
+    zoom-in 1s ease-out forwards;
 }
 
 .zoom-scroll {
     animation: zoom-scroll linear both;
     animation-timeline: view();
-    animation-range: entry 0% cover 15%;
+    animation-range: entry 0% cover 20%;
+}
+
+.zoom-scroll-late {
+    animation: zoom-scroll linear both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 50%;
 }
 
 .fade-scroll {
     animation: fade-scroll linear both;
     animation-timeline: view();
-    animation-range: entry 0% cover 15%;
+    animation-range: entry 0% cover 20%;
+}
+
+@keyframes zoom-in-out-late {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.zoom-in-out-late {
+    animation: zoom-in 2s ease-out forwards, zoom-out 2s ease-out forwards;
+    animation-delay: 200ms, 200ms; 
 }
