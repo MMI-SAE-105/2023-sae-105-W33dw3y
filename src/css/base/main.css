@@ -12,15 +12,9 @@ h3 {
     margin: 0;
 }
 
-.button  {
-    font-family: 'Comfortaa', sans-serif;
-    font-size: var(--body-1);
+a {
     text-decoration: none;
-    color: #000;
-    border: 1px solid #000;
-    text-align: center;
-    padding: 0.8rem 1.3rem;
-    display: flex;
+    color: black;
 }
 
 li {
@@ -32,4 +26,15 @@ li {
 ul {
     margin: 0;
     padding: 0;
+}
+
+.button  {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: var(--body-1);
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    text-align: center;
+    padding: 0.8rem 1.3rem;
+    display: flex;
 }
