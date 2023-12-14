@@ -8,25 +8,29 @@
     <link rel="icon" href="public/icons/icon_logo.svg">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
-<body class="body">
+<body 
+class="body" 
+x-data="{ isMenuOpen: false }"
+>
     <header 
     class="head"
-    x-data="{isMenuOpen: false}"
+    @click.away="isMenuOpen = false"
     >
     <div class="head__content">
         <a href="/">
             <img class="head__logo" src="public/icons/icon_logo.svg" alt="logo">
         </a>
         <p 
-        class="head__btn-menu"
-        @click="isMenuOpen = !isMenuOpen"
-        >MENU</p>
+        class="head__btn-menu" 
+        @click="isMenuOpen = !isMenuOpen">MENU
+        </p>
     </div>
-        <nav 
-        class="menu"
-        :class="{actif:isMenuOpen}"
-        >
-            <div class="menu__header">
+    <nav 
+    class="menu" 
+    :class="{ 'actif': isMenuOpen }" 
+    > 
+
+        <div class="menu__header">
                 <img 
                 class="menu__close" 
                 @click="isMenuOpen = !isMenuOpen"
