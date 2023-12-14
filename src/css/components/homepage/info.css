@@ -8,7 +8,6 @@
 }
 
 .info__title {
-    margin: 0;
     font-size: var(--heading-3);
     font-weight: 700;
     width: 65%;
