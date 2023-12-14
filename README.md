@@ -2,7 +2,7 @@
 - NOM : Mathis
 - PRÉNOM : Liegeon
 - URL du site :
-- URL FIGMA : https://www.figma.com/file/tSJW9gWgTDWGGDmFCuYAvy/SAE-105?type=design&node-id=322%3A1210&mode=design&t=r13mGlIeBXlBhKzn-1
+- URL FIGMA : 
 
 # Structure de départ pour la SAE 105.
 
