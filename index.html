@@ -46,8 +46,20 @@
 
     <nav>
         <ul>
-            <li><a href="/fr/index.html" >Site en français</a></li>
-            <li><a href="/en/index.html" >Site in english</a></li>
+            <li><a 
+                href="/fr/index.html" 
+                onclick="document.cookie = `nf_lang=fr; path=/ ; SameSite=Strict`" 
+                >
+                Site en français
+                </a>
+            </li>
+            <li><a 
+                href="/en/index.html" 
+                onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict`"
+                >
+                Site in english
+                </a>
+            </li>
         </ul>
     </nav>
 
