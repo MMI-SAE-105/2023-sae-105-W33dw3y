@@ -83,3 +83,25 @@
 .caroussel_btn-after {
     right: 0.5rem;
 }
+
+
+
+
+.caroussel__liste-liens {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 1rem;
+
+}
+
+.caroussel__lien:after{
+    content: "○";
+    font-size: 2rem;
+}
+
+.carousselactif:after {
+    content: "●";
+}

@@ -102,76 +102,111 @@ x-data="{ isMenuOpen: false }"
                 <p class="tarif__main-prices">Plein réduit = 7.5€</p>
                 <p class="tarif__main-prices">Réduction 13 - 25 ans = 5€</p>
                 <p class="tarif__main-prices">Fondation Cartier Pass = 18€ - 50€</p>
-                
                 <p class="tarif__secondary-prices">Gratuit pour : les moins de 13 ans, laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants Gratuit.</p>
                 <a class="tarif__button button zoom-scroll">BILLETERIE</a>
             </div>
             <img class="tarif__img fade-scroll" src="public/img/img_homepage_tarifs.webp" alt="maison alan frank">
         </section>
 
-        <section class="caroussel fade-scroll">
-            <button 
+        <section class="caroussel fade-scroll" x-data="{hrefCourant: '#caroussel__screen-1'}">
+            <button
             class="caroussel__btn caroussel_btn-before"
             @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"
             ><img class="caroussel__btn-icon" src="public/icons/icon_arrow_backward.svg" alt="fleche arriere"></button>
-            <button 
+            <button
             class="caroussel__btn caroussel_btn-after"
             @click="$refs.parent.scrollLeft += $refs.parent.clientWidth"
             ><img class="caroussel__btn-icon" src="public/icons/icon_arrow_forward.svg" alt="fleche avant"></button>
-            <div 
+            <div
             class="caroussel__parent-ecran"
             x-ref="parent"
             @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id"
             >
-                <div class="caroussel__screen">
+                <div class="caroussel__screen" id="caroussel__screen-1">
                     <figure class="caroussel__figure">
                         <img src="public/img/img_caroussel_1.webp" alt="usine fagus" class="caroussel__img">
                         <figcaption class="caroussel__text">1910 - L'USINE FAGUS</figcaption>
                     </figure>
                 </div>
-                <div class="caroussel__screen">
+                <div class="caroussel__screen" id="caroussel__screen-2">
                     <figure class="caroussel__figure">
                         <img src="public/img/img_caroussel_2.webp" alt="66 old church street" class="caroussel__img">
                         <figcaption class="caroussel__text">1936 - 66 OLD CHURCH STREET</figcaption>
                     </figure>
                 </div>
-                <div class="caroussel__screen">
+                <div class="caroussel__screen" id="caroussel__screen-3">
                     <figure class="caroussel__figure">
                         <img src="public/img/img_caroussel_3.webp" alt="maison Gropius" class="caroussel__img">
                         <figcaption class="caroussel__text">1938 - LA MAISON GROPIUS </figcaption>
                     </figure>
                 </div>
-                <div class="caroussel__screen">
+                <div class="caroussel__screen" id="caroussel__screen-4">
                     <figure class="caroussel__figure">
                         <img src="public/img/img_caroussel_4.webp" alt="maison alan frank" class="caroussel__img">
                         <figcaption class="caroussel__text">1939 - LA MAISON ALAN I W FRANK</figcaption>
                     </figure>
                 </div>
-                <div class="caroussel__screen">
+                <div class="caroussel__screen" id="caroussel__screen-5">
                     <figure class="caroussel__figure">
                         <img src="public/img/img_caroussel_5.webp" alt="ambassade des etats unis à athene" class="caroussel__img">
                         <figcaption class="caroussel__text">1959 - L’AMBASSADE DES ETATS-UNIS A ATHENE</figcaption>
                     </figure>
                 </div>
-                <div class="caroussel__screen">
+                <div class="caroussel__screen" id="caroussel__screen-6">
                     <figure class="caroussel__figure">
                         <img src="public/img/img_caroussel_6.webp" alt="le temple oheb shalom" class="caroussel__img">
                         <figcaption class="caroussel__text">1960 - LE TEMPLE OHEB SHALOM </figcaption>
                     </figure>
                 </div>
-                <div class="caroussel__screen">
+                <div class="caroussel__screen" id="caroussel__screen-7">
                     <figure class="caroussel__figure">
                         <img src="public/img/img_caroussel_7.webp" alt="pan am building" class="caroussel__img">
                         <figcaption class="caroussel__text">1963 - PAN AM BUILDING</figcaption>
                     </figure>
                 </div>
-                <div class="caroussel__screen">
+                <div class="caroussel__screen" id="caroussel__screen-8">
                     <figure class="caroussel__figure">
                         <img src="public/img/img_caroussel_8.webp" alt="les archives bauhaus" class="caroussel__img">
                         <figcaption class="caroussel__text">1966 - LES ARCHIVES BAUHAUS</figcaption>
                     </figure>
                 </div>
             </div>
+
+            <ul class="caroussel__liste-liens">
+                <li class="caroussel__liste--element">
+                    <a  class="caroussel__lien"
+                    :class="{carousselactif:hrefCourant==='#caroussel__screen-1'}"
+                    ></a>
+                </li>
+                <li><a  class="caroussel__lien"
+                    :class="{carousselactif:hrefCourant==='#caroussel__screen-2'}"
+                    ></a>
+                </li>
+                <li><a  class="caroussel__lien"
+                    :class="{carousselactif:hrefCourant==='#caroussel__screen-3'}"
+                    ></a>
+                </li>
+                <li><a  class="caroussel__lien"
+                    :class="{carousselactif:hrefCourant==='#caroussel__screen-4'}"
+                    ></a>
+                </li>
+                <li><a  class="caroussel__lien"
+                    :class="{carousselactif:hrefCourant==='#caroussel__screen-5'}"
+                    ></a>
+                </li>
+                <li><a  class="caroussel__lien"
+                    :class="{carousselactif:hrefCourant==='#caroussel__screen-6'}"
+                    ></a>
+                </li>
+                <li><a  class="caroussel__lien"
+                    :class="{carousselactif:hrefCourant==='#caroussel__screen-7'}"
+                    ></a>
+                </li>
+                <li><a  class="caroussel__lien"
+                    :class="{carousselactif:hrefCourant==='#caroussel__screen-8'}"
+                    ></a>
+                </li>
+            </ul>
 
             <a href="/biographie.html" class="caroussel__button button zoom-scroll">En savoir plus sur l'artiste</a>
         </section>
