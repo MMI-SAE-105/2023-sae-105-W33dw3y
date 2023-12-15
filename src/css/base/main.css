@@ -28,6 +28,14 @@ ul {
     padding: 0;
 }
 
+.strong-light {
+    font-weight: 100;
+}
+
+strong {
+    font-weight: normal;
+}
+
 .button  {
     font-family: 'Comfortaa', sans-serif;
     font-size: var(--body-1);
