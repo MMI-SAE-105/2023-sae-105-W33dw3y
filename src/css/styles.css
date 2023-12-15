@@ -45,3 +45,8 @@ Soyez attentifs à l'ordre d'import :
 /*contact*/
 @import url(components/contact/body.css);
 @import url(components/contact/header.css);
+
+/*oeuvres*/
+@import url(components/oeuvres/article.css);
+@import url(components/oeuvres/header.css);
+@import url(components/oeuvres/introduction.css);

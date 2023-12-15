@@ -35,5 +35,5 @@
 
 .contact-contact__button {
     background: none;
-    min-width: 180px;
+    max-width: 110px;
 }

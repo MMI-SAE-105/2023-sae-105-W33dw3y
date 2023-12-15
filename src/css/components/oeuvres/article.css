@@ -1,0 +1,39 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0rem;
+
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.article__title {
+    padding: 0rem 1rem;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+
+}
+
+.article__text {
+
+    font-weight: 100;
+    font-size: var(--body-1);
+
+    margin-bottom: 1rem;
+}
+
+.article__content {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 2rem 0rem 2rem;
+    padding: 0rem 0.5rem;
+    background-color: #fff;
+}
+
+.article__img {
+    position: relative;
+    z-index: -1;
+
+    width: 90%;
+    bottom: 2rem;
+}

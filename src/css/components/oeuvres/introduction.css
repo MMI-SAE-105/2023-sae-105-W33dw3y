@@ -1,0 +1,43 @@
+.introduction {
+    background-color: var(--blue);
+
+    position: relative; 
+    padding: 2rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction__background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    object-fit: contain;
+    object-position: left;
+}
+
+.introduction__text {
+    color: #fff;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 100;
+    font-size: var(--body-1);
+
+    z-index: 2;
+
+    margin: 0.5rem 0rem;
+}
+
+.introduction__text-left {
+    width: 90%;
+    align-self: flex-start;
+}
+
+.introduction__text-right {
+    width: 90%;
+    align-self: flex-end;
+    text-align: end;
+}
