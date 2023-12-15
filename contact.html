@@ -17,7 +17,7 @@ x-data="{ isMenuOpen: false }"
     class="head"
     @click.away="isMenuOpen = false"
     >
-    <div class="head__content">
+    <div class="head__content head-contact">
         <a href="/">
             <img class="head__logo" src="public/icons/icon_logo.svg" alt="logo">
         </a>
@@ -80,27 +80,34 @@ x-data="{ isMenuOpen: false }"
     
     <main class="main">
         <section class="header-contact">
-            <h1 class="header-contact__title">Nous contacter</h1>
-            <p class="header-contact__text">des questions ? Une remarque ? Laissez nous un petit commentaire ! </p>
-            <p class="header-contact__text">Laissez nous un petit commentaire ! </p>
+            <div class="header-contact__caption">
+                <h1 class="header-contact__title">Nous contacter</h1>
+                <div class="header-contact__content">
+                    <p class="header-contact__text">Des questions ?</p>
+                    <p class="header-contact__text">Une remarque ?</p>
+                    <p class="header-contact__text">Laissez nous un petit commentaire ! </p>
+                    <img class="header-contact__background-img" src="public/img/img_comic-points.webp" alt="">
+                </div>
+            </div>
+            
         </section> 
 
-        <form class="contact" action="#">
+        <form class="contact-contact" action="#">
                 <ul class="contact__list">
                     <li class="contact__element">
                        <!-- <label for="name"></label> --> 
-                        <input type="text" id="name" name="user_name" placeholder="Nom*">
+                        <input class="contact__element--input" type="text" id="name" name="user_name" placeholder="Nom*">
                     </li>
                     <li class="contact__element">
                         <!-- <label for="mail">Email*</label> -->
-                        <input type="text" id="mail" name="user_mail" placeholder="Email*">
+                        <input class="contact__element--input" type="text" id="mail" name="user_mail" placeholder="Email*">
                     </li>
                     <li class="contact__element">
                         <!-- <label for="mail">Email*</label> -->
-                        <textarea id="msg" name="user_message" placeholder="Votre message"></textarea>
+                        <textarea class="contact__element--textarea" id="msg" name="user_message" placeholder="Votre message"></textarea>
                     </li>
                     <li class="contact__button">
-                        <button>Envoyer</button>
+                        <button class="contact-contact__button   button">Envoyer</button>
                     </li>
                 </ul>
             </form>
