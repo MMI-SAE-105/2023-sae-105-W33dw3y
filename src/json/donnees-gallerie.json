@@ -1,42 +1,42 @@
 [
     {
-        "petite" : "public/img/img_oeuvres_1.webp",
+        "petite" : "/public/img/img_oeuvres_1.webp",
         "alt" : "",
-        "grande" : "public/img/img_oeuvres_1.webp"
+        "grande" : "/public/img/img_oeuvres_1.webp"
     },
     {
-        "petite": "public/img/img_oeuvres_2.webp",
+        "petite": "/public/img/img_oeuvres_2.webp",
         "alt": "",
-        "grande": "public/img/img_oeuvres_2.webp"
+        "grande": "/public/img/img_oeuvres_2.webp"
     },
     {
-        "petite": "public/img/img_oeuvres_3.webp",
+        "petite": "/public/img/img_oeuvres_3.webp",
         "alt": "",
-        "grande": "public/img/img_oeuvres_3.webp"
+        "grande": "/public/img/img_oeuvres_3.webp"
     },
     {
-        "petite": "public/img/img_oeuvres_4.webp",
+        "petite": "/public/img/img_oeuvres_4.webp",
         "alt": "",
-        "grande": "public/img/img_oeuvres_4.webp"
+        "grande": "/public/img/img_oeuvres_4.webp"
     },
     {
-        "petite": "public/img/img_oeuvres_5.webp",
+        "petite": "/public/img/img_oeuvres_5.webp",
         "alt": "",
-        "grande": "public/img/img_oeuvres_5.webp"
+        "grande": "/public/img/img_oeuvres_5.webp"
     },
     {
-        "petite": "public/img/img_oeuvres_6.webp",
+        "petite": "/public/img/img_oeuvres_6.webp",
         "alt": "",
-        "grande": "public/img/img_oeuvres_6.webp"
+        "grande": "/public/img/img_oeuvres_6.webp"
     },
     {
-        "petite": "public/img/img_oeuvres_7.webp",
+        "petite": "/public/img/img_oeuvres_7.webp",
         "alt": "",
         "grande": "public/img/img_oeuvres_7.webp"
     },
     {
-        "petite": "public/img/img_oeuvres_8.webp",
+        "petite": "/public/img/img_oeuvres_8.webp",
         "alt": "",
-        "grande": "public/img/img_oeuvres_8.webp"
+        "grande": "/public/img/img_oeuvres_8.webp"
     }
 ]

@@ -1,294 +1,58 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lignes & Lumières</title>
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="icon" href="public/icons/icon_logo.svg">
-    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Lignes & Lumières Choix de la Langue</title>
+    <link rel="icon" href="/public/icons/icon_logo.svg">
 </head>
-<body 
-class="body" 
-:class="{ 'overflow-hidden': isMenuOpen }"
-x-data="{ isMenuOpen: false }"
->
-    <header 
-    class="head"
-    @click.away="isMenuOpen = false"
-    >
-    <div class="head__content">
-        <a href="/">
-            <img class="head__logo" src="public/icons/icon_logo.svg" alt="logo">
-        </a>
-        <p 
-        class="head__btn-menu" 
-        @click="isMenuOpen = !isMenuOpen">MENU
-        </p>
-    </div>
-    <nav 
-    class="menu" 
-    :class="{ 'actif': isMenuOpen }" 
-    > 
+<body>
+    <h1>Bienvenue sur la page de redirection de  langue</h1>
 
-        <div class="menu__header">
-                <img 
-                class="menu__close" 
-                @click="isMenuOpen = !isMenuOpen"
-                src="public/icons/icon_close.svg" 
-                alt="icon close">
-            </div>
-            <div class="menu__content">
-                <h1 class="menu__title">A PROPOS DE L'EXPOSITION</h1>
-                <hr class="menu__line">     
-                <ul class="menu__list">
-                    <li class="menu__element"><a class="menu__element--link" href="#renseignements">Renseignements</a></li>
-                    <li class="menu__element"><a class="menu__element--link"  href="#">Billeterie</a></li>
-                    <li class="menu__element"><a class="menu__element--link"  href="/contact.html">Contactez-nous</a></li>
-                </ul>
-            </div>
-            <div class="menu__content" x-data="{isSubMenuOpen:false}">
-                <h1 class="menu__title">A PROPOS DE L'ARTISTE</h1>
-                <hr class="menu__line"> 
-                <ul class="menu__list">
-                    <li class="menu__element"><a class="menu__element--link" href="/biographie.html">Biographie</a></li>
-                    <li class="menu__element"><a 
-                        class="menu__element--link" 
-                        href="#"
-                        @click="isSubMenuOpen = !isSubMenuOpen"
-                        >Ses oeuvres</a>
-                    <ul 
-                    class="menu-deroulant"
-                    :class="{submenuactive:isSubMenuOpen}"
-                    >
-                        <li class="menu-deroulant__element"><a class="menu__element--link"  href="/oeuvre1.html">The Fagus-Werk Factory</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre2.html">Pan Am Building</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre3.html">Bauhaus Archive</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre4.html">Temple Oheb Shalom</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre5.html">Gropius House</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre6.html">Ambassade des États-Unis</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre7.html">Maison Alan I W Frank </a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre8.html">66 Old Church Street</a></li>
-                    </ul></li>
-                </ul>
-            </div>
-            
-            <a class="menu__legal-notice" href="#">Mentions légales</a>
-        </nav>
+    <nav>
+        <ul>
+            <li><a href="/src/fr/index.html" onclick="document.cookie = 
+                `nf_lang=fr; path=/ ; SameSite=Strict`
+                ">Accueil en français</a></li>
+            <li><a href="/src/en/index.html" onclick="document.cookie = 
+                `nf_lang=en; path=/ ; SameSite=Strict`
+                ">Home in english</a></li>
+        </ul>
+    </nav>
 
-    </header>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-    <main class="main">
-        <header class="header-home">
-            <h2 class="header-home__title zoom-in-out">Lignes & Lumières</h2>
-            <p class="header-home__text"> <strong class="strong-light">Exposition</strong></p>
-            <h2 class="header-home__title"><strong class="strong-light">Walter Gropius</strong></h2>
-            <img class="header-home__background-img" src="public/img/img_homepage_header.webp" alt="Walter Gropius photo">
-        </header>
+            padding: 3rem;
+        }
 
-        <section class="info" id="renseignements">
-            <h3 class="info__title info__text">Du 13 avril au 23 juin 2024</h3>
-            <p class="info__date info__text">Tous les jours de 11h à 20h, sauf le lundi.  </p>
-            <p class="info__date info__text">Nocturne le mardi, jusqu'à 22h.</p>
-            <p class="info__date info__text">La fermeture des salles débuteà 19h45 (21h45 les mardis).</p>
-            <hr class="info__line">
-            <p class="info__place info__text">Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
-        </section>
+        h1 {
+            font-family: 'Commissioner', sans-serif;
+            font-weight: 900;
+            text-align: center;
+            color: orange;
+        }
 
-        <section class="tarif">
-            <div class="tarif__content">
-                <h3 class="tarif__title">Tarifs</h3>
-                <p class="tarif__main-prices">Plein tarifs = 11€</p>
-                <p class="tarif__main-prices">Plein réduit = 7.5€</p>
-                <p class="tarif__main-prices">Réduction 13 - 25 ans = 5€</p>
-                <p class="tarif__main-prices">Fondation Cartier Pass = 18€ - 50€</p>
-                <p class="tarif__secondary-prices">Gratuit pour : les moins de 13 ans, laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants Gratuit.</p>
-                <a class="tarif__button button zoom-scroll">BILLETERIE</a>
-            </div>
-            <img class="tarif__img fade-scroll" src="public/img/img_homepage_tarifs.webp" alt="maison alan frank">
-        </section>
+        a {
+            font-family: 'Comfortaa', sans-serif;
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(55, 86, 98);
+        }
+        li {
+            list-style-type: none;
+            margin: 1rem 0rem 0rem 0rem;
+            padding: 0;
+            text-align: center;
+        }
 
-        <section class="caroussel fade-scroll" x-data="{hrefCourant: '#caroussel__screen-1'}">
-            <button
-            class="caroussel__btn caroussel_btn-before"
-            @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"
-            ><img class="caroussel__btn-icon" src="public/icons/icon_arrow_backward.svg" alt="fleche arriere"></button>
-            <button
-            class="caroussel__btn caroussel_btn-after"
-            @click="$refs.parent.scrollLeft += $refs.parent.clientWidth"
-            ><img class="caroussel__btn-icon" src="public/icons/icon_arrow_forward.svg" alt="fleche avant"></button>
-            <div
-            class="caroussel__parent-ecran"
-            x-ref="parent"
-            @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id"
-            >
-                <div class="caroussel__screen" id="caroussel__screen-1">
-                    <figure class="caroussel__figure">
-                        <a href="oeuvre1.html" class="caroussel__figure--link">
-                            <img src="public/img/img_caroussel_1.webp" alt="usine fagus" class="caroussel__img">
-                        </a>
-                        <figcaption class="caroussel__text">1910 - L'USINE FAGUS</figcaption>
-                    </figure>
-                </div>
-                <div class="caroussel__screen" id="caroussel__screen-2">
-                    <figure class="caroussel__figure">
-                        <a href="oeuvre8.html" class="caroussel__figure--link">
-                            <img src="public/img/img_caroussel_2.webp" alt="66 old church street" class="caroussel__img">
-                        </a>
-                        <figcaption class="caroussel__text">1936 - 66 OLD CHURCH STREET</figcaption>
-                    </figure>
-                </div>
-                <div class="caroussel__screen" id="caroussel__screen-3">
-                    <figure class="caroussel__figure">
-                        <a href="oeuvre5.html" class="caroussel__figure--link">
-                            <img src="public/img/img_caroussel_3.webp" alt="maison Gropius" class="caroussel__img">
-                        </a>
-                        <figcaption class="caroussel__text">1938 - LA MAISON GROPIUS </figcaption>
-                    </figure>
-                </div>
-                <div class="caroussel__screen" id="caroussel__screen-4">
-                    <figure class="caroussel__figure">
-                        <a href="oeuvre7.html" class="caroussel__figure--link">
-                            <img src="public/img/img_caroussel_4.webp" alt="maison alan frank" class="caroussel__img">
-                        </a>
-                        <figcaption class="caroussel__text">1939 - LA MAISON ALAN I W FRANK</figcaption>
-                    </figure>
-                </div>
-                <div class="caroussel__screen" id="caroussel__screen-5">
-                    <figure class="caroussel__figure">
-                        <a href="oeuvre6.html" class="caroussel__figure--link">
-                            <img src="public/img/img_caroussel_5.webp" alt="ambassade des etats unis à athene" class="caroussel__img">
-                        </a>
-                        <figcaption class="caroussel__text">1959 - L’AMBASSADE DES ETATS-UNIS A ATHENE</figcaption>
-                    </figure>
-                </div>
-                <div class="caroussel__screen" id="caroussel__screen-6">
-                    <figure class="caroussel__figure">
-                        <a href="oeuvre4.html" class="caroussel__figure--link">
-                            <img src="public/img/img_caroussel_6.webp" alt="le temple oheb shalom" class="caroussel__img">
-                        </a>
-                        <figcaption class="caroussel__text">1960 - LE TEMPLE OHEB SHALOM </figcaption>
-                    </figure>
-                </div>
-                <div class="caroussel__screen" id="caroussel__screen-7">
-                    <figure class="caroussel__figure">
-                        <a href="oeuvre2.html" class="caroussel__figure--link">
-                            <img src="public/img/img_caroussel_7.webp" alt="pan am building" class="caroussel__img">
-                        </a>
-                        <figcaption class="caroussel__text">1963 - PAN AM BUILDING</figcaption>
-                    </figure>
-                </div>
-                <div class="caroussel__screen" id="caroussel__screen-8">
-                    <figure class="caroussel__figure">
-                        <a href="oeuvre3.html" class="caroussel__figure--link">
-                            <img src="public/img/img_caroussel_8.webp" alt="les archives bauhaus" class="caroussel__img">
-                        </a>
-                        <figcaption class="caroussel__text">1966 - LES ARCHIVES BAUHAUS</figcaption>
-                    </figure>
-                </div>
-            </div>
-
-            <ul class="caroussel__liste-liens">
-                <li class="caroussel__liste--element">
-                    <a  class="caroussel__lien"
-                    :class="{carousselactif:hrefCourant==='#caroussel__screen-1'}"
-                    ></a>
-                </li>
-                <li><a  class="caroussel__lien"
-                    :class="{carousselactif:hrefCourant==='#caroussel__screen-2'}"
-                    ></a>
-                </li>
-                <li><a  class="caroussel__lien"
-                    :class="{carousselactif:hrefCourant==='#caroussel__screen-3'}"
-                    ></a>
-                </li>
-                <li><a  class="caroussel__lien"
-                    :class="{carousselactif:hrefCourant==='#caroussel__screen-4'}"
-                    ></a>
-                </li>
-                <li><a  class="caroussel__lien"
-                    :class="{carousselactif:hrefCourant==='#caroussel__screen-5'}"
-                    ></a>
-                </li>
-                <li><a  class="caroussel__lien"
-                    :class="{carousselactif:hrefCourant==='#caroussel__screen-6'}"
-                    ></a>
-                </li>
-                <li><a  class="caroussel__lien"
-                    :class="{carousselactif:hrefCourant==='#caroussel__screen-7'}"
-                    ></a>
-                </li>
-                <li><a  class="caroussel__lien"
-                    :class="{carousselactif:hrefCourant==='#caroussel__screen-8'}"
-                    ></a>
-                </li>
-            </ul>
-
-            <a href="/biographie.html" class="caroussel__button button zoom-scroll">En savoir plus sur l'artiste</a>
-        </section>
-
-        <section class="contact fade-scroll">
-            <h1 class="contact__title">Inscrivez-vous à la newsletter</h1>
-            <form class="newsletter" action="#">
-                <ul class="newsletter__list">
-                    <li class="newsletter__element">
-                        <img class="newsletter__element--img" src="public/icons/icon_person.svg" alt="icone representant une personne">
-                        <input class="newsletter__element-textarea" type="text" id="name" name="user_name" placeholder="Nom*">
-                    </li>
-                    <li class="newsletter__element">
-                        <img class="newsletter__element--img" src="public/icons/icon_mail.svg" alt="icone de lettre">
-                        <input class="newsletter__element-textarea" type="text" id="mail" name="user_mail" placeholder="Email*">
-                    </li>   
-                    <li class="newsletter__element-button">
-                        <button class="newsletter__button button">Envoyer</button>
-                    </li>
-                </ul>
-            </form>
-
-            <hr class="contact__line">
-
-            <a class="contact__button button zoom-scroll" href="/contact.html">Contactez-nous !</a>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <section class="footer-header">
-            <img class="footer-header__icon" src="public/icons/icon_logo.svg" alt="logo">
-            <h1 class="footer-header__title">Lignes & Lumières</h1>
-        </section>
-
-        <nav class="footer__content">
-            <h1 class="footer__title">Menu</h1>
-            <ul class="footer-nav__list">
-                <li class="footer__element"><a class="footer-nav__link" href="#renseignements">Renseignements</a></li>
-                <li class="footer__element"><a class="footer-nav__link" href="#">Billeterie</a></li>
-                <li class="footer__element"><a class="footer-nav__link" href="#">Mentions légales</a></li>
-            </ul>
-        </nav>
-
-        <section class="footer__content">
-            <h1 class="footer__title">Contact</h1>
-
-                <p class="footer__element">261 Bd Raspail , 75014 Paris</p>
-                <p class="footer__element">Tél. +33 1 42 18 56 50</p>
-                <p class="footer__element">info.reservation@fondation.cartier.com</p>
-
-        </section>
-
-        <section class="footer-social">
-            <h2 class="footer__title">Nous suivre</h2>
-            <div class="footer-social__content">
-                <a href="#">
-                    <img class="footer-social__icon" src="public/icons/icon_facebook.svg" alt="facebook icon">
-                </a>
-                <a href="#">
-                    <img class="footer-social__icon" src="public/icons/icon_instagram.svg" alt="instagram icon">
-                </a>
-                <a href="#">
-                    <img class="footer-social__icon" src="public/icons/icon_youtube.svg" alt="youtube icon">
-                </a>
-            </div>
-        </section>
-    </footer>
+        ul {
+            padding: 0;
+        }
+    </style>
 </body>
 </html>

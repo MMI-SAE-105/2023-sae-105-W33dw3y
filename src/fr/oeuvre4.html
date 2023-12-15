@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Pan Am Building</title>
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="icon" href="public/icons/icon_logo.svg">
+    <title>Le Temple Oheb Shalom</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="icon" href="/public/icons/icon_logo.svg">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body 
@@ -18,8 +18,8 @@ x-data="{ isMenuOpen: false }"
     @click.away="isMenuOpen = false"
     >
     <div class="head__content">
-        <a href="/">
-            <img class="head__logo" src="public/icons/icon_logo.svg" alt="logo">
+        <a href="index.html">
+            <img class="head__logo" src="/public/icons/icon_logo.svg" alt="logo">
         </a>
         <p 
         class="head__btn-menu" 
@@ -35,23 +35,23 @@ x-data="{ isMenuOpen: false }"
                 <img 
                 class="menu__close" 
                 @click="isMenuOpen = !isMenuOpen"
-                src="public/icons/icon_close.svg" 
+                src="/public/icons/icon_close.svg" 
                 alt="icon close">
             </div>
             <div class="menu__content">
                 <h1 class="menu__title">A PROPOS DE L'EXPOSITION</h1>
                 <hr class="menu__line">     
                 <ul class="menu__list">
-                    <li class="menu__element"><a class="menu__element--link" href="/index.html#renseignements">Renseignements</a></li>
+                    <li class="menu__element"><a class="menu__element--link" href="/src/fr/index.html#renseignements">Renseignements</a></li>
                     <li class="menu__element"><a class="menu__element--link"  href="#">Billeterie</a></li>
-                    <li class="menu__element"><a class="menu__element--link"  href="/contact.html">Contactez-nous</a></li>
+                    <li class="menu__element"><a class="menu__element--link"  href="contact.html">Contactez-nous</a></li>
                 </ul>
             </div>
             <div class="menu__content" x-data="{isSubMenuOpen:false}">
                 <h1 class="menu__title">A PROPOS DE L'ARTISTE</h1>
                 <hr class="menu__line"> 
                 <ul class="menu__list">
-                    <li class="menu__element"><a class="menu__element--link" href="/biographie.html">Biographie</a></li>
+                    <li class="menu__element"><a class="menu__element--link" href="biographie.html">Biographie</a></li>
                     <li class="menu__element"><a 
                         class="menu__element--link" 
                         href="#"
@@ -61,14 +61,14 @@ x-data="{ isMenuOpen: false }"
                     class="menu-deroulant"
                     :class="{submenuactive:isSubMenuOpen}"
                     >
-                        <li class="menu-deroulant__element"><a class="menu__element--link"  href="/oeuvre1.html">The Fagus-Werk Factory</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre2.html">Pan Am Building</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre3.html">Bauhaus Archive</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre4.html">Temple Oheb Shalom</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre5.html">Gropius House</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre6.html">Ambassade des États-Unis</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre7.html">Maison Alan I W Frank </a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre8.html">66 Old Church Street</a></li>
+                        <li class="menu-deroulant__element"><a class="menu__element--link"  href="oeuvre1.html">The Fagus-Werk Factory</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre2.html">Pan Am Building</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre3.html">Bauhaus Archive</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre4.html">Temple Oheb Shalom</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre5.html">Gropius House</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre6.html">Ambassade des États-Unis</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre7.html">Maison Alan I W Frank </a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre8.html">66 Old Church Street</a></li>
                     </ul></li>
                 </ul>
             </div>
@@ -77,38 +77,45 @@ x-data="{ isMenuOpen: false }"
         </nav>
 
     </header>
-        
+    
     <main class="main">
         <section class="header-oeuvre">
-            <h1 class="header-oeuvre__title"><strong>PAN AM BUILDING</strong></h1>
-            <p class="header-oeuvre__text">Un Exemple de simplicité</p>
-            <img src="public/img/img_oeuvre2_header.webp" alt="photo du pan am building" class="header-oeuvre__background-img">
-        </section>
+            <h1 class="header-oeuvre__title"><strong>LE TEMPLE OHEB SHALOM</strong></h1>
+            <img src="public/img/img_oeuvre4_header.webp" alt="photo du temple oheb shalom" class="header-oeuvre__background-img">
+        </section> 
 
         <section class="introduction">
-            <p class="introduction__text introduction__text-left">Conçu par Emery Roth & Sons avec la collaboration de Walter Gropius et Pietro Belluschi, le Pan Am Building est un exemple du Style international. </p>
-            <p class="introduction__text introduction__text-right">Avec sa forme de prisme en acier, béton prémoulé et verre1, il a été conçu dans un souci d'efficacité, avec ses vastes surfaces et son absence de décorations inutiles.</p>
+            <p class="introduction__text introduction__text-left">Le Temple Oheb Shalom est une synagogue réformée située à Baltimore, dans le Maryland. Le point le plus élevé de la ville se trouve sur son parking.</p>
             <img src="public/img/img_comic-points_blue.png" alt="points comics" class="introduction__background">
         </section>
 
         <article class="article">
             <h1 class="article__title">Son histoire</h1>
             <div class="article__content">
-                <p class="article__text">La tour a été commandée pour être le siège de PanAm Airways. Inaugurée officiellement le 7 mars 1963, la PanAm occupait à l'origine 15 étages, et elle est restée le siège de la PanAm même après que la Metropolitan Life Insurance Company a racheté le bâtiment en 1981. Plus tard, en 1992, lorsque PanAm a finalement été dissoute, le bâtiment a été rebaptisé MetLife.</p>
-                <p class="article__text">Une autre caractéristique du bâtiment qui a été conservée est l'héliport situé sur le toit.</p>
-                <img src="public/img/img_oeuvre2_article1.webp" alt="photo du pan am building" class="article__img">
+                <p class="article__text">La congrégation a été fondée en 1853 par des immigrants juifs originaires des États membres de la Confédération allemande, de Hongrie et des territoires tchèques </p>
+                <p class="article__text">Le rabbin réformateur pionnier Isaac Mayer Wise a eu une influence considérable sur la création de la congrégation.</p>
+                <p class="article__text">Sa première maison se trouvait sur Hanover Street, près de Camden Yards.</p>
             </div>
+            <img src="public/img/img_oeuvre4_article1.webp" alt="photo du temple oheb shalom" class="article__img">
         </article>
  
         <article class="article">
             <h1 class="article__title">Sa conception</h1>
             <div class="article__content">
-                <p class="article__text">Le bâtiment, avec sa silhouette massive et puissante, domine la gare centrale et est exactement la moitié des park Avenue en fermant toute continuité visuelle. </p>
-                <p class="article__text">La critique est évidemment axée sur Gropius et Belluschi, les prestigieux architectes qui ont provoqué l'aspect final.</p>
-                <p class="article__text">Pressé par la critique sévère, Gropius a été forcé de se défendre 1965 les pages de Casabella, affirmant la dépendance de l'architecte sur le client, peu importe les besoins urbains de la communauté, et de nier en aucune façon les principes du grand mouvement architectural qui a donné une partie de la première poussée.</p>
+                <p class="article__text">En 1892, la congrégation construit le temple d'Eutaw Place, conçu par l'architecte Joseph Evans Sperry qui s'inspire de la Grande Synagogue de Florence dans le style néo-mauresque à la mode. La congrégation vend le bâtiment aux francs-maçons Prince Hall en 1961.</p>
+                <p class="article__text">En 1953, la congrégation termine la construction de son bâtiment actuel avec l'architecte-conseil Walter Gropius en 1960. La conception est dominée par quatre grandes voûtes.</p>
             </div>
-            <img src="public/img/img_oeuvre2_article2.webp" alt="photo du pan am building" class="article__img">
+            <img src="public/img/img_oeuvre4_article2.webp" alt="photo du temple oheb shalom" class="article__img">
         </article>
+
+        <section class="biography__quote-content article-quote">
+            <q class="biography__quote quote">
+                <span class="biography__quote--content zoom-scroll">
+                Le projet de Gropius présente également une conception atypique, le sol du sanctuaire montant vers la bimah sur le mur oriental. Cette conception a été inversée par la suite, le sol descendant vers la bimah sur le mur occidental.
+            </span>
+                <img src="public/img/img_comic-points.webp" alt="fond style comics points" class="quote__background_img">
+            </q>
+        </section>
         
     </main>
 

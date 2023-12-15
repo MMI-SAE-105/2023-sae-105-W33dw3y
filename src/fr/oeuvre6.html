@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les Archives Bauhaus</title>
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="icon" href="public/icons/icon_logo.svg">
+    <title>L'Ambassade des Etats-Unis à Athène</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="icon" href="/public/icons/icon_logo.svg">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body 
@@ -18,8 +18,8 @@ x-data="{ isMenuOpen: false }"
     @click.away="isMenuOpen = false"
     >
     <div class="head__content">
-        <a href="/">
-            <img class="head__logo" src="public/icons/icon_logo.svg" alt="logo">
+        <a href="index.html">
+            <img class="head__logo" src="/public/icons/icon_logo.svg" alt="logo">
         </a>
         <p 
         class="head__btn-menu" 
@@ -35,23 +35,23 @@ x-data="{ isMenuOpen: false }"
                 <img 
                 class="menu__close" 
                 @click="isMenuOpen = !isMenuOpen"
-                src="public/icons/icon_close.svg" 
+                src="/public/icons/icon_close.svg" 
                 alt="icon close">
             </div>
             <div class="menu__content">
                 <h1 class="menu__title">A PROPOS DE L'EXPOSITION</h1>
                 <hr class="menu__line">     
                 <ul class="menu__list">
-                    <li class="menu__element"><a class="menu__element--link" href="/index.html#renseignements">Renseignements</a></li>
+                    <li class="menu__element"><a class="menu__element--link" href="/src/fr/index.html#renseignements">Renseignements</a></li>
                     <li class="menu__element"><a class="menu__element--link"  href="#">Billeterie</a></li>
-                    <li class="menu__element"><a class="menu__element--link"  href="/contact.html">Contactez-nous</a></li>
+                    <li class="menu__element"><a class="menu__element--link"  href="contact.html">Contactez-nous</a></li>
                 </ul>
             </div>
             <div class="menu__content" x-data="{isSubMenuOpen:false}">
                 <h1 class="menu__title">A PROPOS DE L'ARTISTE</h1>
                 <hr class="menu__line"> 
                 <ul class="menu__list">
-                    <li class="menu__element"><a class="menu__element--link" href="/biographie.html">Biographie</a></li>
+                    <li class="menu__element"><a class="menu__element--link" href="biographie.html">Biographie</a></li>
                     <li class="menu__element"><a 
                         class="menu__element--link" 
                         href="#"
@@ -61,14 +61,14 @@ x-data="{ isMenuOpen: false }"
                     class="menu-deroulant"
                     :class="{submenuactive:isSubMenuOpen}"
                     >
-                        <li class="menu-deroulant__element"><a class="menu__element--link"  href="/oeuvre1.html">The Fagus-Werk Factory</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre2.html">Pan Am Building</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre3.html">Bauhaus Archive</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre4.html">Temple Oheb Shalom</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre5.html">Gropius House</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre6.html">Ambassade des États-Unis</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre7.html">Maison Alan I W Frank </a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre8.html">66 Old Church Street</a></li>
+                        <li class="menu-deroulant__element"><a class="menu__element--link"  href="oeuvre1.html">The Fagus-Werk Factory</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre2.html">Pan Am Building</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre3.html">Bauhaus Archive</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre4.html">Temple Oheb Shalom</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre5.html">Gropius House</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre6.html">Ambassade des États-Unis</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre7.html">Maison Alan I W Frank </a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre8.html">66 Old Church Street</a></li>
                     </ul></li>
                 </ul>
             </div>
@@ -80,32 +80,31 @@ x-data="{ isMenuOpen: false }"
     
     <main class="main">
         <section class="header-oeuvre">
-            <h1 class="header-oeuvre__title"><strong>LES ARCHIVES BAUHAUS</strong></h1>
-            <p class="header-oeuvre__text">Un Exemple de simplicité</p>
-            <img src="public/img/img_oeuvre3_header.webp" alt="photo des archives bauhaus" class="header-oeuvre__background-img">
+            <h1 class="header-oeuvre__title"><strong>L’AMBASSADEDES ETATS-UNIS A ATHENE</strong></h1>
+            <img src="public/img/img_oeuvre6_header.webp" alt="photo de l'ambassade des etats unis" class="header-oeuvre__background-img">
         </section>
 
         <section class="introduction">
-            <p class="introduction__text introduction__text-left">Le Bauhaus-Archiv est un musée berlinois réalisé par les architectes Walter Gropius et Alexander Cvijanovic et inauguré en 1979 pour abriter les archives du Bauhaus.</p>
+            <p class="introduction__text introduction__text-left">L'ambassade est chargée de la diplomatie et des relations entre la Grèce et les États-Unis. </p>
             <img src="public/img/img_comic-points_blue.png" alt="points comics" class="introduction__background">
         </section>
 
         <article class="article">
             <h1 class="article__title">Son histoire</h1>
             <div class="article__content">
-                <p class="article__text">Le Bauhaus a été l'école de design, d'architecture et d'art la plus importante du 20ème siècle. Le Bauhaus a créé un style qui a dépassé son époque : La « lampe Bauhaus », la chaise en tubes d'acier de Marcel Breuer ou les « tapis Bauhaus » sont des classiques de l'art moderne. </p>
-                <p class="article__text">Dans l'un des bâtiments créés par Walter Gropius, le fondateur du Bauhaus, on trouve la collection la plus complète au monde sur l'histoire de cette école et sur tous les aspects de son travail. </p>
+                <p class="article__text">En 2003, l'ambassade des États-Unis et la municipalité d'Athènes ont célébré l'ajout d'un espace vert accueillant, le parc de la rue Makedonon.</p>
+                <p class="article__text">En 2007, une extension a permis d'ajouter un immeuble de bureaux, un parking, des entrées dans l'enceinte, une station-service, des locaux pour les gardes de sécurité du corps des Marines, une piscine et un terrain de basket-ball. Le nouveau bâtiment de bureaux a été conçu pour s'intégrer parfaitement à la chancellerie.</p>
             </div>
-            <img src="public/img/img_oeuvre3_article1.webp" alt="photo des archives bauhaus" class="article__img">
+            <img src="public/img/img_oeuvre6_article1.webp" alt="photo de l'ambassade des etats unis class="article__img">
         </article>
  
         <article class="article">
-            <h1 class="article__title">La collection</h1>
+            <h1 class="article__title">Sa conception</h1>
             <div class="article__content">
-                <p class="article__text">Le Bauhaus-Archiv a pour vocation de mettre en valeur la contribution artistique de l'un des courants des beaux-arts les plus importants du xxe siècle : architecture, design, photographie et mobilier.</p>
-                <p class="article__text">Dans la grande halle du musée, l'archive du Bauhaus présente la collection la plus importante au monde portant sur l'intégralité du spectre de créations de l'école du Bauhaus : architecture, meubles, céramique, métal, photographie, scène et travaux préparatoires</p>
+                <p class="article__text">L'immeuble de bureaux a une superficie de 5 026 mètres carrés (54 100 pieds carrés) et comprend des bureaux pour plus de 150 personnes.</p>
+                <p class="article__text">En septembre 2018, l'ambassade a entamé des travaux de rénovation pluriannuels qui permettront de créer des espaces de bureaux supplémentaires et de moderniser les systèmes électriques et mécaniques. Les travaux devraient coûter 342 millions de dollars et durer quatre ans. De nombreux éléments datent de la construction du bâtiment en 1961. </p>
             </div>
-            <img src="public/img/img_oeuvre3_article2.webp" alt="photo des archives bauhaus" class="article__img">
+            <img src="public/img/img_oeuvre6_article2.webp" alt="photo de l'ambassade des etats unis" class="article__img">
         </article>
         
     </main>

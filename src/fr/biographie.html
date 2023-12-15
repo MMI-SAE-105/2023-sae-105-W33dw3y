@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biographie</title>
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="icon" href="public/icons/icon_logo.svg">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="icon" href="/public/icons/icon_logo.svg">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body
@@ -18,64 +18,63 @@ imgUrl: null,
             },
         }"
 :class="{ 'overflow-hidden': isMenuOpen || imgUrl !== null }"
-
 >
-    <header
+    <header 
     class="head"
     @click.away="isMenuOpen = false"
     >
     <div class="head__content">
-        <a href="/">
-            <img class="head__logo" src="public/icons/icon_logo.svg" alt="logo">
+        <a href="index.html">
+            <img class="head__logo" src="/public/icons/icon_logo.svg" alt="logo">
         </a>
-        <p
-        class="head__btn-menu"
+        <p 
+        class="head__btn-menu" 
         @click="isMenuOpen = !isMenuOpen">MENU
         </p>
     </div>
-    <nav
-    class="menu"
-    :class="{ 'actif': isMenuOpen }"
-    >
+    <nav 
+    class="menu" 
+    :class="{ 'actif': isMenuOpen }" 
+    > 
 
         <div class="menu__header">
-                <img
-                class="menu__close"
+                <img 
+                class="menu__close" 
                 @click="isMenuOpen = !isMenuOpen"
-                src="public/icons/icon_close.svg"
+                src="/public/icons/icon_close.svg" 
                 alt="icon close">
             </div>
             <div class="menu__content">
                 <h1 class="menu__title">A PROPOS DE L'EXPOSITION</h1>
-                <hr class="menu__line">
+                <hr class="menu__line">     
                 <ul class="menu__list">
-                    <li class="menu__element"><a class="menu__element--link" href="/index.html#renseignements">Renseignements</a></li>
+                    <li class="menu__element"><a class="menu__element--link" href="/src/fr/index.html#renseignements">Renseignements</a></li>
                     <li class="menu__element"><a class="menu__element--link"  href="#">Billeterie</a></li>
-                    <li class="menu__element"><a class="menu__element--link"  href="/contact.html">Contactez-nous</a></li>
+                    <li class="menu__element"><a class="menu__element--link"  href="contact.html">Contactez-nous</a></li>
                 </ul>
             </div>
             <div class="menu__content" x-data="{isSubMenuOpen:false}">
                 <h1 class="menu__title">A PROPOS DE L'ARTISTE</h1>
-                <hr class="menu__line">
+                <hr class="menu__line"> 
                 <ul class="menu__list">
-                    <li class="menu__element"><a class="menu__element--link" href="/biographie.html">Biographie</a></li>
-                    <li class="menu__element"><a
-                        class="menu__element--link"
+                    <li class="menu__element"><a class="menu__element--link" href="biographie.html">Biographie</a></li>
+                    <li class="menu__element"><a 
+                        class="menu__element--link" 
                         href="#"
                         @click="isSubMenuOpen = !isSubMenuOpen"
                         >Ses oeuvres</a>
-                    <ul
+                    <ul 
                     class="menu-deroulant"
                     :class="{submenuactive:isSubMenuOpen}"
                     >
-                        <li class="menu-deroulant__element"><a class="menu__element--link"  href="/oeuvre1.html">The Fagus-Werk Factory</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre2.html">Pan Am Building</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre3.html">Bauhaus Archive</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre4.html">Temple Oheb Shalom</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre5.html">Gropius House</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre6.html">Ambassade des États-Unis</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre7.html">Maison Alan I W Frank </a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre8.html">66 Old Church Street</a></li>
+                        <li class="menu-deroulant__element"><a class="menu__element--link"  href="oeuvre1.html">The Fagus-Werk Factory</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre2.html">Pan Am Building</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre3.html">Bauhaus Archive</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre4.html">Temple Oheb Shalom</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre5.html">Gropius House</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre6.html">Ambassade des États-Unis</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre7.html">Maison Alan I W Frank </a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre8.html">66 Old Church Street</a></li>
                     </ul></li>
                 </ul>
             </div>
@@ -91,12 +90,12 @@ imgUrl: null,
             <h1 class="header-bio__title-strong zoom-in-out"> <strong>WALTER GROPIUS</strong></h1>
             <p class="header-bio__text header-bio__text-top">Architecte, Designer </p>
             <p class="header-bio__text header-bio__text-bottom">& Urbaniste</p>
-            <img src="public/img/img_biography_header.webp" alt="walter gropius photo" class="header-bio__background-img">
+            <img src="/public/img/img_biography_header.webp" alt="walter gropius photo" class="header-bio__background-img">
         </section>
 
         <section class="biography">
             <div class="biography__img-content">
-                <img class="biography__img zoom-in-out-late" src="public/img/img_biography.webp" alt="walter gropius photo">
+                <img class="biography__img zoom-in-out-late" src="/public/img/img_biography.webp" alt="walter gropius photo">
             </div>
 
             <section class="biography__main">
@@ -117,7 +116,7 @@ imgUrl: null,
                     <span class="biography__quote--content zoom-scroll">
                         Il est le fondateur du Bauhaus, mouvement clé de l'art européen de l'entre-deux-guerres, qui jette les bases du style international. Théoricien du design, il promeut toute sa vie les concepts de rationalisme, de fonctionnalisme et de standardisation.
                     </span>
-                    <img src="public/img/img_comic-points.webp" alt="fond style comics points" class="quote__background_img">
+                    <img src="/public/img/img_comic-points.webp" alt="fond style comics points" class="quote__background_img">
                 </q>
             </section>
 
@@ -159,7 +158,7 @@ imgUrl: null,
     
     <footer class="footer">
         <section class="footer-header">
-            <img class="footer-header__icon" src="public/icons/icon_logo.svg" alt="logo">
+            <img class="footer-header__icon" src="/public/icons/icon_logo.svg" alt="logo">
             <h1 class="footer-header__title">Lignes & Lumières</h1>
         </section>
 

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'Ambassade des Etats-Unis à Athène</title>
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="icon" href="public/icons/icon_logo.svg">
+    <title>La Maison Gropius</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="icon" href="/public/icons/icon_logo.svg">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body 
@@ -18,8 +18,8 @@ x-data="{ isMenuOpen: false }"
     @click.away="isMenuOpen = false"
     >
     <div class="head__content">
-        <a href="/">
-            <img class="head__logo" src="public/icons/icon_logo.svg" alt="logo">
+        <a href="index.html">
+            <img class="head__logo" src="/public/icons/icon_logo.svg" alt="logo">
         </a>
         <p 
         class="head__btn-menu" 
@@ -35,23 +35,23 @@ x-data="{ isMenuOpen: false }"
                 <img 
                 class="menu__close" 
                 @click="isMenuOpen = !isMenuOpen"
-                src="public/icons/icon_close.svg" 
+                src="/public/icons/icon_close.svg" 
                 alt="icon close">
             </div>
             <div class="menu__content">
                 <h1 class="menu__title">A PROPOS DE L'EXPOSITION</h1>
                 <hr class="menu__line">     
                 <ul class="menu__list">
-                    <li class="menu__element"><a class="menu__element--link" href="/index.html#renseignements">Renseignements</a></li>
+                    <li class="menu__element"><a class="menu__element--link" href="/src/fr/index.html#renseignements">Renseignements</a></li>
                     <li class="menu__element"><a class="menu__element--link"  href="#">Billeterie</a></li>
-                    <li class="menu__element"><a class="menu__element--link"  href="/contact.html">Contactez-nous</a></li>
+                    <li class="menu__element"><a class="menu__element--link"  href="contact.html">Contactez-nous</a></li>
                 </ul>
             </div>
             <div class="menu__content" x-data="{isSubMenuOpen:false}">
                 <h1 class="menu__title">A PROPOS DE L'ARTISTE</h1>
                 <hr class="menu__line"> 
                 <ul class="menu__list">
-                    <li class="menu__element"><a class="menu__element--link" href="/biographie.html">Biographie</a></li>
+                    <li class="menu__element"><a class="menu__element--link" href="biographie.html">Biographie</a></li>
                     <li class="menu__element"><a 
                         class="menu__element--link" 
                         href="#"
@@ -61,14 +61,14 @@ x-data="{ isMenuOpen: false }"
                     class="menu-deroulant"
                     :class="{submenuactive:isSubMenuOpen}"
                     >
-                        <li class="menu-deroulant__element"><a class="menu__element--link"  href="/oeuvre1.html">The Fagus-Werk Factory</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre2.html">Pan Am Building</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre3.html">Bauhaus Archive</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre4.html">Temple Oheb Shalom</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre5.html">Gropius House</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre6.html">Ambassade des États-Unis</a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre7.html">Maison Alan I W Frank </a></li>
-                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="/oeuvre8.html">66 Old Church Street</a></li>
+                        <li class="menu-deroulant__element"><a class="menu__element--link"  href="oeuvre1.html">The Fagus-Werk Factory</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre2.html">Pan Am Building</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre3.html">Bauhaus Archive</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre4.html">Temple Oheb Shalom</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre5.html">Gropius House</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre6.html">Ambassade des États-Unis</a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre7.html">Maison Alan I W Frank </a></li>
+                        <li class="menu-deroulant__element"><a class="menu-deroulant__element--link" href="oeuvre8.html">66 Old Church Street</a></li>
                     </ul></li>
                 </ul>
             </div>
@@ -80,31 +80,32 @@ x-data="{ isMenuOpen: false }"
     
     <main class="main">
         <section class="header-oeuvre">
-            <h1 class="header-oeuvre__title"><strong>L’AMBASSADEDES ETATS-UNIS A ATHENE</strong></h1>
-            <img src="public/img/img_oeuvre6_header.webp" alt="photo de l'ambassade des etats unis" class="header-oeuvre__background-img">
+            <h1 class="header-oeuvre__title"><strong>LA MAISON GROPIUS</strong></h1>
+            <img src="public/img/img_oeuvre5_header.webp" alt="photo de la maison gropius" class="header-oeuvre__background-img">
         </section>
 
         <section class="introduction">
-            <p class="introduction__text introduction__text-left">L'ambassade est chargée de la diplomatie et des relations entre la Grèce et les États-Unis. </p>
+            <p class="introduction__text introduction__text-left">La maison Gropius est une maison-musée historique appartenant à Historic New England, située aux États-Unis. </p>
+            <p class="introduction__text introduction__text-right">C'était la résidence familiale de l'architecte moderniste Walter Gropius, de sa femme Ise Gropius  et de leur fille Ati Gropius.</p>
             <img src="public/img/img_comic-points_blue.png" alt="points comics" class="introduction__background">
         </section>
 
         <article class="article">
             <h1 class="article__title">Son histoire</h1>
             <div class="article__content">
-                <p class="article__text">En 2003, l'ambassade des États-Unis et la municipalité d'Athènes ont célébré l'ajout d'un espace vert accueillant, le parc de la rue Makedonon.</p>
-                <p class="article__text">En 2007, une extension a permis d'ajouter un immeuble de bureaux, un parking, des entrées dans l'enceinte, une station-service, des locaux pour les gardes de sécurité du corps des Marines, une piscine et un terrain de basket-ball. Le nouveau bâtiment de bureaux a été conçu pour s'intégrer parfaitement à la chancellerie.</p>
+                <p class="article__text">Gropius et sa famille sont arrivés aux États-Unis après un séjour de trois ans à Londres, où ils avaient déménagé pour échapper au régime nazi. </p>
+                <p class="article__text">Gropius est venu dans le Massachusetts pour accepter un poste d'enseignant à la Graduate School of Design de l'université de Harvard. Son collègue Henry Shepley convainc la philanthrope Helen Storrow de fournir un terrain et de financer la conception et la construction d'une maison pour Gropius, que ce dernier conçoit en 1937 et que le constructeur local Casper J. Jenney construit en 1938.</p>
             </div>
-            <img src="public/img/img_oeuvre6_article1.webp" alt="photo de l'ambassade des etats unis class="article__img">
+            <img src="public/img/img_oeuvre5_article1.webp" alt="photo de la maison gropius" class="article__img">
         </article>
  
         <article class="article">
-            <h1 class="article__title">Sa conception</h1>
+            <h1 class="article__title">La collection</h1>
             <div class="article__content">
-                <p class="article__text">L'immeuble de bureaux a une superficie de 5 026 mètres carrés (54 100 pieds carrés) et comprend des bureaux pour plus de 150 personnes.</p>
-                <p class="article__text">En septembre 2018, l'ambassade a entamé des travaux de rénovation pluriannuels qui permettront de créer des espaces de bureaux supplémentaires et de moderniser les systèmes électriques et mécaniques. Les travaux devraient coûter 342 millions de dollars et durer quatre ans. De nombreux éléments datent de la construction du bâtiment en 1961. </p>
+                <p class="article__text">La Maison Gropius combine des éléments traditionnels de l'architecture de la Nouvelle-Angleterre - bois, briques et pierres des champs - avec des matériaux innovants tels que le bloc de verre, le plâtre acoustique, les rampes d'escalier chromées et les dernières technologies en matière de luminaires. </p>
+                <p class="article__text">Elle comporte des meubles conçus par Marcel Breuer et fabriqués dans les ateliers du Bauhaus. Avec les biens de la famille encore en place, la maison Gropius a un sens de l'immédiateté et de l'intimité. </p>
             </div>
-            <img src="public/img/img_oeuvre6_article2.webp" alt="photo de l'ambassade des etats unis" class="article__img">
+            <img src="public/img/img_oeuvre5_article2.webp" alt="photo de la maison gropius" class="article__img">
         </article>
         
     </main>
