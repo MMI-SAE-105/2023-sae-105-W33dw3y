@@ -5,48 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Page Not Found</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-            margin: 0;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            font-size: 72px;
-            margin-bottom: 10px;
-            color: #d9534f;
-        }
-
-        p {
-            font-size: 18px;
-            margin-bottom: 20px;
-            color: #777;
-        }
-
-        a {
-            color: #428bca;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="src/css/styles.css">
 </head>
-<body>
-    <div class="container">
-        <h1>404</h1>
-        <p>Oops! La page que vous recherchez semble introuvable.</p>
-        <p>Retournez à la <a href="/">page d'accueil</a>.</p>
+<body class="erreur__body">
+    <div class="erreur">
+        <h1 class="erreur__title">404</h1>
+        <p class="erreur__text">Oops! La page que vous recherchez semble introuvable.</p>
+        <p class="erreur__text">Retournez à la <a class="erreur__link" href="/">page d'accueil</a>.</p>
     </div>
 </body>
 </html>
