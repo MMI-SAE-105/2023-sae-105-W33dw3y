@@ -19,7 +19,7 @@
     /* Center vertically and horizontally */
     place-content: center;
 
-    z-index: 1;
+    z-index: 3;
 }
 
 .close-overlay {
