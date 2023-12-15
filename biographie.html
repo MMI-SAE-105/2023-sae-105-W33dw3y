@@ -10,8 +10,15 @@
 </head>
 <body
 class="body"
-x-data="{ isMenuOpen: false }"
-:class="{ 'overflow-hidden': isMenuOpen }"
+x-data="{ isMenuOpen: false ,
+imgUrl: null,
+        async tabimg() {
+            const resp = await fetch('/src/json/donnees-gallerie.json');
+            return await resp.json();
+            },
+        }"
+:class="{ 'overflow-hidden': isMenuOpen || imgUrl !== null }"
+
 >
     <header
     class="head"
@@ -125,12 +132,6 @@ x-data="{ isMenuOpen: false }"
         </section>
 
         <section class="gallery"
-        x-data="{imgUrl: null,
-        async tabimg() {
-            const resp = await fetch('/src/json/donnees-gallerie.json');
-            return await resp.json();
-            },
-        }"
         >
             <h1 class="gallery__title">Ses oeuvres principales</h1>
             <div class="gallery__content">
