@@ -12,6 +12,7 @@
     padding: 1rem 1rem 0.5rem 1rem;
 }
 
+
 .head__btn-menu {
     margin: 0;
     padding: 0;
@@ -67,8 +68,14 @@
     width: 100%;
     border-bottom: 1px solid #FFF;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem 1.5rem;
+}
+
+.menu-langage {
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 .menu__close {

@@ -32,12 +32,19 @@ x-data="{ isMenuOpen: false }"
     > 
 
         <div class="menu__header">
-                <img 
-                class="menu__close" 
-                @click="isMenuOpen = !isMenuOpen"
-                src="/public/icons/icon_close.svg" 
-                alt="icon close">
-            </div>
+            <a 
+            class="menu-langage"
+            href="/en/index.html"
+            onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict`"
+            >EN
+            </a>
+            
+            <img 
+            class="menu__close" 
+            @click="isMenuOpen = !isMenuOpen"
+            src="/public/icons/icon_close.svg" 
+            alt="icon close">
+        </div>
             <div class="menu__content">
                 <h1 class="menu__title">A PROPOS DE L'EXPOSITION</h1>
                 <hr class="menu__line">     

@@ -17,7 +17,7 @@ x-data="{ isMenuOpen: false }"
     class="head"
     @click.away="isMenuOpen = false"
     >
-    <div class="head__content">
+    <div class="head__content head-contact">
         <a href="index.html">
             <img class="head__logo" src="/public/icons/icon_logo.svg" alt="logo">
         </a>
@@ -32,6 +32,12 @@ x-data="{ isMenuOpen: false }"
     > 
 
         <div class="menu__header">
+            <a 
+            class="menu-langage"
+            href="/en/index.html"
+            onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict`"
+            >EN
+            </a>
                 <img 
                 class="menu__close" 
                 @click="isMenuOpen = !isMenuOpen"
@@ -42,7 +48,7 @@ x-data="{ isMenuOpen: false }"
                 <h1 class="menu__title">A PROPOS DE L'EXPOSITION</h1>
                 <hr class="menu__line">     
                 <ul class="menu__list">
-                    <li class="menu__element"><a class="menu__element--link" href="/src/fr/index.html#renseignements">Renseignements</a></li>
+                    <li class="menu__element"><a class="menu__element--link" href="/fr/index.html#renseignements">Renseignements</a></li>
                     <li class="menu__element"><a class="menu__element--link"  href="#">Billeterie</a></li>
                     <li class="menu__element"><a class="menu__element--link"  href="contact.html">Contactez-nous</a></li>
                 </ul>
@@ -86,7 +92,7 @@ x-data="{ isMenuOpen: false }"
                     <p class="header-contact__text">Des questions ?</p>
                     <p class="header-contact__text">Une remarque ?</p>
                     <p class="header-contact__text">Laissez nous un petit commentaire ! </p>
-                    <img class="header-contact__background-img" src="public/img/img_comic-points.webp" alt="">
+                    <img class="header-contact__background-img" src="/public/img/img_comic-points.webp" alt="">
                 </div>
             </div>
             
@@ -115,7 +121,7 @@ x-data="{ isMenuOpen: false }"
 
     <footer class="footer">
         <section class="footer-header">
-            <img class="footer-header__icon" src="public/icons/icon_logo.svg" alt="logo">
+            <img class="footer-header__icon" src="/public/icons/icon_logo.svg" alt="logo">
             <h1 class="footer-header__title">Lignes & Lumières</h1>
         </section>
 
@@ -141,13 +147,13 @@ x-data="{ isMenuOpen: false }"
             <h2 class="footer__title">Nous suivre</h2>
             <div class="footer-social__content">
                 <a href="#">
-                    <img class="footer-social__icon" src="public/icons/icon_facebook.svg" alt="facebook icon">
+                    <img class="footer-social__icon" src="/public/icons/icon_facebook.svg" alt="facebook icon">
                 </a>
                 <a href="#">
-                    <img class="footer-social__icon" src="public/icons/icon_instagram.svg" alt="instagram icon">
+                    <img class="footer-social__icon" src="/public/icons/icon_instagram.svg" alt="instagram icon">
                 </a>
                 <a href="#">
-                    <img class="footer-social__icon" src="public/icons/icon_youtube.svg" alt="youtube icon">
+                    <img class="footer-social__icon" src="/public/icons/icon_youtube.svg" alt="youtube icon">
                 </a>
             </div>
             </section>

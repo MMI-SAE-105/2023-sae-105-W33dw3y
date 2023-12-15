@@ -38,6 +38,12 @@ imgUrl: null,
     > 
 
         <div class="menu__header">
+            <a 
+            class="menu-langage"
+            href="/en/index.html"
+            onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict`"
+            >EN
+            </a>
                 <img 
                 class="menu__close" 
                 @click="isMenuOpen = !isMenuOpen"
