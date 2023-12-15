@@ -46,3 +46,15 @@
 .article-quote {
     margin-bottom: 2rem;
 }
+
+.button__article {
+    text-align: center;
+    align-self: center;
+    background: none;
+}
+
+.button__article__box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
