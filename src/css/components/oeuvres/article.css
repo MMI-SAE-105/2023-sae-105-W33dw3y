@@ -26,8 +26,8 @@
     display: flex;
     flex-direction: column;
     margin: 0rem 2rem 0rem 2rem;
-    padding: 0rem 0.5rem;
-    background-color: #fff;
+    padding: 0.5rem;
+    background-color: #f4f4f4;
 }
 
 .article__img {
@@ -36,4 +36,9 @@
 
     width: 90%;
     bottom: 2rem;
+}
+
+
+.article-quote {
+    margin-bottom: 2rem;
 }

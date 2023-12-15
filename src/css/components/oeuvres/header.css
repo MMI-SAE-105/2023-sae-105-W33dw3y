@@ -8,7 +8,7 @@
 
     width: 100%;
     height: 60vh;
-    max-height: 395px;
+    max-height: 336px;
 
 
     color: white;
@@ -29,7 +29,7 @@
 .header-oeuvre__text {
     align-self: flex-start;
     width: 55%;
-    margin: 2rem;
+    margin: 0.5rem 2rem;
 
     font-weight: 100;
     font-size: var(--body-1);
@@ -38,5 +38,5 @@
 .header-oeuvre__title {
     font-family: 'commissioner', sans-serif;
     font-weight: 900;
-    margin-right: 1rem;
+    margin: 1rem 1rem;
 }
