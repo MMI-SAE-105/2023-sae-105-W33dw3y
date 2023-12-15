@@ -42,6 +42,7 @@ Soyez attentifs à l'ordre d'import :
 /*biography*/
 @import url(components/biography/header-bio.css);
 @import url(components/biography/bio.css);
+@import url(components/biography/gallerie.css);
 
 /*contact*/
 @import url(components/contact/body.css);

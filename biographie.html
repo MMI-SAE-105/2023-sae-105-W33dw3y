@@ -124,18 +124,35 @@ x-data="{ isMenuOpen: false }"
             </article>
         </section>
 
-        <section class="gallery">
+        <section class="gallery"
+        x-data="{imgUrl: null,
+        async tabimg() {
+            const resp = await fetch('/src/json/donnees-gallerie.json');
+            return await resp.json();
+            },
+        }"
+        >
             <h1 class="gallery__title">Ses oeuvres principales</h1>
-            <ul class="gallery__list">
-                <li class="gallery__element"><img class="gallery__element--img zoom-scroll" src="public/img/img_oeuvres_8.webp" alt="usine fagus"></li>
-                <li class="gallery__element"><img class="gallery__element--img zoom-scroll-late" src="public/img/img_oeuvres_7.webp" alt="66 old church street"></li>
-                <li class="gallery__element"><img class="gallery__element--img zoom-scroll" src="public/img/img_oeuvres_6.webp" alt="maison gropius"></li>
-                <li class="gallery__element"><img class="gallery__element--img zoom-scroll-late" src="public/img/img_oeuvres_5.webp" alt="maison alan frank"></li>
-                <li class="gallery__element"><img class="gallery__element--img zoom-scroll" src="public/img/img_oeuvres_4.webp" alt="ambassade des etats unis a athene"></li>
-                <li class="gallery__element"><img class="gallery__element--img zoom-scroll-late" src="public/img/img_oeuvres_3.webp" alt="le temple oheb shalom"></li>
-                <li class="gallery__element"><img class="gallery__element--img zoom-scroll" src="public/img/img_oeuvres_2.webp" alt="pan am building"></li>
-                <li class="gallery__element"><img class="gallery__element--img zoom-scroll-late" src="public/img/img_oeuvres_1.webp" alt="les archives bauhaus"></li>
-            </ul>
+            <div class="gallery__content">
+                <template
+                class="gallery__template"
+                x-for="img of tabimg"
+                >
+                    <img 
+                    class="gallery__image zoom-scroll"
+                    :src="img.petite" 
+                    :alt="img.alt"
+                    @click="imgUrl=img.grande"
+                    >
+                </template>
+            </div>
+            <div
+            class="gallery__overlay"
+            x-show="imgUrl"
+            >
+                <div @click="imgUrl=null" class="close-overlay">&times;</div>
+                <figure class="gallery__overlay--figure"><img class="gallery__overlay--img" :src="imgUrl" alt="image 237... un chiot"></figure>
+            </div>
         </section>
     </main>
     
